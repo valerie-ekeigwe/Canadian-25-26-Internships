@@ -32,8 +32,18 @@ jobs:
       - name: Scrape postings
         run: python scripts/scraper.py --filters filters.yaml --output data/postings.json
 
-      - name: Normalize postings.json
+      - name: Normalize postings
         run: python scripts/normalize.py
+
+      - name: Show first 5 rows
+        run: |
+          python - << 'PY'
+          import json
+          with open('data/postings.json', 'r', encoding='utf-8') as f:
+              arr = json.load(f)
+          print("rows:", len(arr))
+          print(json.dumps(arr[:5], indent=2, ensure_ascii=False))
+          PY
 
       - name: Render README
         run: python scripts/render_readme.py
