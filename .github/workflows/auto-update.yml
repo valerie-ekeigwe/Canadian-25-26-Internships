@@ -2,7 +2,7 @@ name: Update internships README
 
 on:
   schedule:
-    - cron: "15 13 * * *"   # 9:15 AM ET daily (13:15 UTC)
+    - cron: "15 13 * * *"   # 9:15 AM ET daily
   workflow_dispatch:
 
 permissions:
@@ -26,21 +26,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Create data folder
+      - name: Ensure data folder
         run: mkdir -p data
 
-      # TODO: replace this with your real scraper command that writes data/postings.json
-      - name: Scrape postings (temporary placeholder)
-        run: echo "[]" > data/postings.json
+      - name: Scrape postings
+        run: python scripts/scraper.py --filters filters.yaml --output data/postings.json
 
       - name: Render README
         run: python scripts/render_readme.py
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+      - name: Commit README directly to main
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit-message: "chore: auto-update internships README"
-          title: "Automated update"
-          body: "This PR was created automatically by the daily updater."
-          branch: chore/auto-update
-          delete-branch: true
+          commit_message: "chore: auto-update internships README"
+          file_pattern: |
+            README.md
+            data/postings.json
+          branch: main
