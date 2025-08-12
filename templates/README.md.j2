@@ -1,63 +1,107 @@
-# Canadian 25–26 Internships
+# Canada Engineering Internships & Programs  
+[![Last Updated](https://img.shields.io/github/last-commit/valerie-ekeigwe/Canadian-25-26-Internships?label=Last%20Updated&style=flat-square)](https://github.com/valerie-ekeigwe/Canadian-25-26-Internships/commits/main)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/valerie-ekeigwe/Canadian-25-26-Internships/pulls)
+![Made in Canada](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20in-Canada-red?style=flat-square)
 
-_Last updated: **{{ generated_at }}**_
+_Last updated: **{{ generated_at }}**_  
 
-Canada‑first internships across **Software, Mechatronics/Robotics, Electrical, Mechanical, Civil, Chemical, Industrial/Manufacturing, Aerospace, Mining, Data/ML/AI, Hardware/Embedded, Law, Consulting**. Auto‑updated daily.
+A Canada-first, continuously updated list of **engineering internships**, **law and consulting roles**, and **student programs** for Canadian students — plus select **US roles that explicitly accept Canadian applicants**.  
 
-## Fresh roles (new or updated in last 7 days)
-{% if fresh %}
-| Status | Company | Role | Location | Tags | Source | Link |
-|---|---|---|---|---|---|---|
-{% for r in fresh -%}
-| {% if r.status == 'Closed' %}<span style="color:#dc2626"><b>Closed</b></span>{% else %}Open{% endif %} | {{ r.company }} | {{ r.title }} | {{ r.location or '—' }} | {{ ", ".join(r.tags) }} | {{ r.source }} | [Apply]({{ r.url }}) |
-{% endfor -%}
-{% else %}
-No new or updated postings in the last week.
-{% endif %}
+All links point to official company or program pages.
 
-## All tracked roles
-| Status | Company | Role | Location | Tags | Source | Link |
-|---|---|---|---|---|---|---|
-{% for r in all -%}
-| {% if r.status == 'Closed' %}<span style="color:#dc2626"><b>Closed</b></span>{% else %}Open{% endif %} | {{ r.company }} | {{ r.title }} | {{ r.location or '—' }} | {{ ", ".join(r.tags) }} | {{ r.source }} | [Apply]({{ r.url }}) |
-{% endfor -%}
+> **Sorting:** By **Deadline** (ascending), then **Company**. If no date is listed on the official page, “Rolling/unspecified” is shown.  
+> **Status:** Automatically updated to Open or Closed based on the official source.
 
 ---
 
-## Opportunities for Canadians
+## Software (SWE)
 
-### Hackathons
-{% if opps.hackathons %}
-{% for h in opps.hackathons -%}
-- **{{ h.name }}** → {{ h.link }}  · _{{ ", ".join(h.tags) }}_
-{% endfor -%}
-{% else %}
-No hackathons listed yet.
-{% endif %}
+| Company | Role | City/Province | Posted | Deadline | Notes | Status | Link |
+|---|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
 
-### Conferences
-{% if opps.conferences %}
-{% for c in opps.conferences -%}
-- **{{ c.name }}** → {{ c.link }}  · _{{ ", ".join(c.tags) }}_
-{% endfor -%}
-{% else %}
-No conferences listed yet.
-{% endif %}
+---
 
-### Student Programs
-{% if opps.programs %}
-{% for p in opps.programs -%}
-- **{{ p.name }}** → {{ p.link }}  · _{{ ", ".join(p.tags) }}_
-{% endfor -%}
-{% else %}
-No programs listed yet.
-{% endif %}
+## Mechanical
 
-### Fellowships
-{% if opps.fellowships %}
-{% for f in opps.fellowships -%}
-- **{{ f.name }}** → {{ f.link }}  · _{{ ", ".join(f.tags) }}_
-{% endfor -%}
-{% else %}
-No fellowships listed yet.
-{% endif %}
+| Company | Role | City/Province | Posted | Deadline | Notes | Status | Link |
+|---|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Mechatronics / Robotics / Embedded
+
+| Company | Role | City/Province | Posted | Deadline | Notes | Status | Link |
+|---|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Electrical / Computer / Hardware
+
+| Company | Role | City/Province | Posted | Deadline | Notes | Status | Link |
+|---|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Law & Consulting (Canada)
+
+| Company | Role | City/Province | Posted | Deadline | Notes | Status | Link |
+|---|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Fellowships & Student Programs
+
+| Name | Type | Region/City | Date(s)/Deadline | Notes | Status | Official Link |
+|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Canadian Tech Events, Conferences & Hackathons
+
+| Name | Type | Region/City | Date(s) | Notes | Status | Official Link |
+|---|---|---|---|---|---|---|
+| _Data auto-generated here by the updater_ |
+
+---
+
+## Contributing
+
+Spotted a new posting or dead link? Open a PR:
+
+1. Keep the **table structure** and columns exactly as shown.  
+2. Link only to the **official** careers or program page.  
+3. Use **Rolling/unspecified** when a date isn’t listed.  
+4. Normalize location formatting (e.g., `Toronto, ON`).  
+5. The updater will handle sorting and status updates automatically.
+
+---
+
+## Update Policy
+
+When the bot runs:
+
+- Re-verify all links; mark expired roles as Closed.  
+- Update dates from official pages.  
+- Add new roles in engineering, law, or consulting that are open to Canadian students.  
+- Keep the table format stable for automation.
+
+---
+
+## Changelog
+
+- **2025-08-12**: Added Law & Consulting section; restructured for automation; swapped hardcoded date for `{{ generated_at }}`; cleaned typos.
+- **2025-08-09**: Expanded coverage; added Status column; added multiple new companies and programs.
+- **2025-08-09 (earlier)**: Initial Canada-first list with SWE, Mechanical, Mechatronics/Embedded, ECE/Hardware, Programs/Fellowships, and Events.
+
+---
+
+### Notes & Caveats
+
+- This list is curated for **Canadian students**.  
+- US roles are included **only** if the official posting explicitly states Canadians are eligible (global eligibility, remote from Canada, or explicit mention).  
