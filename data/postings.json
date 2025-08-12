@@ -1,1 +1,1158 @@
-
+{
+  "items": {
+    "https://www.blg.com/en/careers": {
+      "company": "BLG",
+      "title": "legal intern",
+      "url": "https://www.blg.com/en/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.bennettjones.com/Careers": {
+      "company": "Bennett Jones",
+      "title": "legal intern",
+      "url": "https://www.bennettjones.com/Careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.blakes.com/careers": {
+      "company": "Blake, Cassels & Graydon",
+      "title": "legal intern",
+      "url": "https://www.blakes.com/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://cassels.com/careers": {
+      "company": "Cassels Brock",
+      "title": "legal intern",
+      "url": "https://cassels.com/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7012102?gh_jid=7012102": {
+      "company": "Coinbase Canada",
+      "title": "Senior Software Engineer, Backend (Consumer -  International)",
+      "url": "https://www.coinbase.com/careers/positions/7012102?gh_jid=7012102",
+      "location": "Remote - Canada",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.fasken.com/en/careers": {
+      "company": "Fasken",
+      "title": "legal intern",
+      "url": "https://www.fasken.com/en/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://corporate.ford.ca/careers.html": {
+      "company": "Ford Canada",
+      "title": "engineer intern",
+      "url": "https://corporate.ford.ca/careers.html",
+      "location": "Ontario",
+      "source": "Manual",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.gm.com": {
+      "company": "General Motors Canada",
+      "title": "engineer intern",
+      "url": "https://careers.gm.com",
+      "location": "Ontario",
+      "source": "Manual",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://goodmans.ca/careers": {
+      "company": "Goodmans",
+      "title": "legal intern",
+      "url": "https://goodmans.ca/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://gowlingwlg.com/en/careers": {
+      "company": "Gowling WLG",
+      "title": "legal intern",
+      "url": "https://gowlingwlg.com/en/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.hondacanadamfg.ca/en/careers": {
+      "company": "Honda of Canada Mfg.",
+      "title": "engineer intern",
+      "url": "https://www.hondacanadamfg.ca/en/careers",
+      "location": "Ontario",
+      "source": "Manual",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.mccarthy.ca/en/careers": {
+      "company": "McCarthy Tétrault",
+      "title": "legal intern",
+      "url": "https://www.mccarthy.ca/en/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.nortonrosefulbright.com/en-ca/careers": {
+      "company": "Norton Rose Fulbright Canada",
+      "title": "legal intern",
+      "url": "https://www.nortonrosefulbright.com/en-ca/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.osler.com/en/careers": {
+      "company": "Osler, Hoskin & Harcourt",
+      "title": "legal intern",
+      "url": "https://www.osler.com/en/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.fcagroup.com": {
+      "company": "Stellantis Canada",
+      "title": "engineer intern",
+      "url": "https://careers.fcagroup.com",
+      "location": "Ontario",
+      "source": "Manual",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.stikeman.com/en-ca/careers": {
+      "company": "Stikeman Elliott",
+      "title": "legal intern",
+      "url": "https://www.stikeman.com/en-ca/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx": {
+      "company": "Supreme Court of Canada",
+      "title": "law student",
+      "url": "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx",
+      "location": "Ottawa, ON",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.torys.com/careers": {
+      "company": "Torys",
+      "title": "legal intern",
+      "url": "https://www.torys.com/careers",
+      "location": "Canada",
+      "source": "Manual",
+      "tags": [
+        "Law"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://tmmc.ca/en/careers": {
+      "company": "Toyota Motor Manufacturing Canada",
+      "title": "engineer intern",
+      "url": "https://tmmc.ca/en/careers",
+      "location": "Ontario",
+      "source": "Manual",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://amazon.jobs/content/en/teams/amazon-web-services/internships": {
+      "company": "Amazon Canada",
+      "title": "AWS internships",
+      "url": "https://amazon.jobs/content/en/teams/amazon-web-services/internships",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://amazon.jobs/content/en/career-programs/university-ops/eu-students-internship": {
+      "company": "Amazon Canada",
+      "title": "Operations internships for students in Europe",
+      "url": "https://amazon.jobs/content/en/career-programs/university-ops/eu-students-internship",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "Industrial",
+        "Consulting"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://amazon.jobs/content/en/career-programs/university-ops/na-students-internship": {
+      "company": "Amazon Canada",
+      "title": "Operations internships for students in North America",
+      "url": "https://amazon.jobs/content/en/career-programs/university-ops/na-students-internship",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "Industrial",
+        "Consulting"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://jobs.toronto.ca/jobsatcity/content/Internal-Jobs/?locale=en_US": {
+      "company": "City of Toronto",
+      "title": "Internal Jobs",
+      "url": "https://jobs.toronto.ca/jobsatcity/content/Internal-Jobs/?locale=en_US",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://vancouver.ca/your-government/new-opportunities-for-current-employees.aspx": {
+      "company": "City of Vancouver",
+      "title": "review and apply for an internal job posting.",
+      "url": "https://vancouver.ca/your-government/new-opportunities-for-current-employees.aspx",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7106744?gh_jid=7106744": {
+      "company": "Coinbase Canada",
+      "title": "Internal Audit - Findings Associate",
+      "url": "https://www.coinbase.com/careers/positions/7106744?gh_jid=7106744",
+      "location": "Remote - India",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/6953339?gh_jid=6953339": {
+      "company": "Coinbase Canada",
+      "title": "Internal Audit - SOX Senior Manager",
+      "url": "https://www.coinbase.com/careers/positions/6953339?gh_jid=6953339",
+      "location": "Remote - USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7095011?gh_jid=7095011": {
+      "company": "Coinbase Canada",
+      "title": "Internal Communications Manager",
+      "url": "https://www.coinbase.com/careers/positions/7095011?gh_jid=7095011",
+      "location": "Remote - USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7113176?gh_jid=7113176": {
+      "company": "Coinbase Canada",
+      "title": "International Exchange Sales Manager",
+      "url": "https://www.coinbase.com/careers/positions/7113176?gh_jid=7113176",
+      "location": "Remote - Brazil",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7141779?gh_jid=7141779": {
+      "company": "Coinbase Canada",
+      "title": "International Investigations Associate and MLRO Delegate",
+      "url": "https://www.coinbase.com/careers/positions/7141779?gh_jid=7141779",
+      "location": "Hybrid - Luxembourg",
+      "source": "Greenhouse",
+      "tags": [
+        "Data-ml-ai"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7099818?gh_jid=7099818": {
+      "company": "Coinbase Canada",
+      "title": "Program Manager, HR M&A and International Expansion",
+      "url": "https://www.coinbase.com/careers/positions/7099818?gh_jid=7099818",
+      "location": "Remote - USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7144470?gh_jid=7144470": {
+      "company": "Coinbase Canada",
+      "title": "Senior Product Manager, International Derivatives",
+      "url": "https://www.coinbase.com/careers/positions/7144470?gh_jid=7144470",
+      "location": "Remote - USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/6807293?gh_jid=6807293": {
+      "company": "Coinbase Canada",
+      "title": "Software Engineer, Backend (International Exchange)",
+      "url": "https://www.coinbase.com/careers/positions/6807293?gh_jid=6807293",
+      "location": "Remote - Singapore",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7128691?gh_jid=7128691": {
+      "company": "Coinbase Canada",
+      "title": "Specialist, Coinbase Derivatives & International Exchange",
+      "url": "https://www.coinbase.com/careers/positions/7128691?gh_jid=7128691",
+      "location": "Remote - Ireland",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7128692?gh_jid=7128692": {
+      "company": "Coinbase Canada",
+      "title": "Specialist, Coinbase Derivatives & International Exchange",
+      "url": "https://www.coinbase.com/careers/positions/7128692?gh_jid=7128692",
+      "location": "Remote - UK",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.coinbase.com/careers/positions/7128689?gh_jid=7128689": {
+      "company": "Coinbase Canada",
+      "title": "Specialist, Coinbase Derivatives & International Exchange",
+      "url": "https://www.coinbase.com/careers/positions/7128689?gh_jid=7128689",
+      "location": "San Francisco, CA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/7137278/?gh_jid=7137278": {
+      "company": "Datadog Canada",
+      "title": "Manager I, Engineering - Internal Services Platform: Workloads & Integrations",
+      "url": "https://careers.datadoghq.com/detail/7137278/?gh_jid=7137278",
+      "location": "Lisbon, Portugal",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/6993745/?gh_jid=6993745": {
+      "company": "Datadog Canada",
+      "title": "Senior Internal Auditor",
+      "url": "https://careers.datadoghq.com/detail/6993745/?gh_jid=6993745",
+      "location": "New York, New York, USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/6871675/?gh_jid=6871675": {
+      "company": "Datadog Canada",
+      "title": "Senior Product Designer - Internal Tools",
+      "url": "https://careers.datadoghq.com/detail/6871675/?gh_jid=6871675",
+      "location": "New York, New York, USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/6574046/?gh_jid=6574046": {
+      "company": "Datadog Canada",
+      "title": "Senior Security Engineer, Internal Trust",
+      "url": "https://careers.datadoghq.com/detail/6574046/?gh_jid=6574046",
+      "location": "New York, New York, USA",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/6370445/?gh_jid=6370445": {
+      "company": "Datadog Canada",
+      "title": "Senior Software Engineer - Internal Service Platform",
+      "url": "https://careers.datadoghq.com/detail/6370445/?gh_jid=6370445",
+      "location": "Paris, France",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/6841346/?gh_jid=6841346": {
+      "company": "Datadog Canada",
+      "title": "Senior Software Engineer - Windows system internals",
+      "url": "https://careers.datadoghq.com/detail/6841346/?gh_jid=6841346",
+      "location": "Lisbon, Portugal",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.datadoghq.com/detail/7116235/?gh_jid=7116235": {
+      "company": "Datadog Canada",
+      "title": "Senior Software Engineer - macOS System internals",
+      "url": "https://careers.datadoghq.com/detail/7116235/?gh_jid=7116235",
+      "location": "Lisbon, Portugal",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/research-affiliate-program.html": {
+      "company": "Government of Canada FSWEP",
+      "title": "Find a student research job in the Government of Canada",
+      "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/research-affiliate-program.html",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/coop-internship.html": {
+      "company": "Government of Canada FSWEP",
+      "title": "Government of Canada Co-op placements and internships",
+      "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/coop-internship.html",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32638": {
+      "company": "Government of Canada FSWEP",
+      "title": "Learn more about student eligibility.",
+      "url": "https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=32638",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/specialized-recruitment-programs.html": {
+      "company": "Government of Canada FSWEP",
+      "title": "Other Government of Canada opportunities for students and graduates",
+      "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/specialized-recruitment-programs.html",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html/en/public-service-commission/jobs/services/recruitment/students.html": {
+      "company": "Government of Canada FSWEP",
+      "title": "Public service student recruitment programs",
+      "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html/en/public-service-commission/jobs/services/recruitment/students.html",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://wiki.gccollab.ca/Employment_Opportunity_for_Students_with_Disabilities%27_Resource_Page": {
+      "company": "Government of Canada FSWEP",
+      "title": "The Employment Opportunity for Students with Disabilities",
+      "url": "https://wiki.gccollab.ca/Employment_Opportunity_for_Students_with_Disabilities%27_Resource_Page",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://wiki.gccollab.ca/Indigenous_Student_Employment_Opportunity": {
+      "company": "Government of Canada FSWEP",
+      "title": "The Indigenous Student Employment Opportunity",
+      "url": "https://wiki.gccollab.ca/Indigenous_Student_Employment_Opportunity",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://jobs.hatch.com/go/Student-&-New-Graduate-Jobs/2565100/": {
+      "company": "Hatch",
+      "title": "Student & Graduates",
+      "url": "https://jobs.hatch.com/go/Student-&-New-Graduate-Jobs/2565100/",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://jobs.hatch.com/#": {
+      "company": "Hatch",
+      "title": "Students and Graduates",
+      "url": "https://jobs.hatch.com/#",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://jobs.hatch.com/content/Students-and-Graduates/?locale=en_US": {
+      "company": "Hatch",
+      "title": "Students and Graduates",
+      "url": "https://jobs.hatch.com/content/Students-and-Graduates/?locale=en_US",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://jobs.hydroone.com/go/Student-Jobs/826900/": {
+      "company": "Hydro One",
+      "title": "Student  & New Grad Jobs",
+      "url": "https://jobs.hydroone.com/go/Student-Jobs/826900/",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.metacareers.com/careerprograms/students": {
+      "company": "Meta Canada",
+      "title": "Students and grads",
+      "url": "https://www.metacareers.com/careerprograms/students",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/nrc-co-op-program": {
+      "company": "NRC (National Research Council)",
+      "title": "Co-op opportunities",
+      "url": "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/nrc-co-op-program",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/indigenous-student-employment-program": {
+      "company": "NRC (National Research Council)",
+      "title": "Indigenous students",
+      "url": "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/indigenous-student-employment-program",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/persons-disabilities-internship-program": {
+      "company": "NRC (National Research Council)",
+      "title": "Internship for persons with disabilities",
+      "url": "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/persons-disabilities-internship-program",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/nrc-student-employment-program": {
+      "company": "NRC (National Research Council)",
+      "title": "Student employment",
+      "url": "https://nrc.canada.ca/en/corporate/careers/en/corporate/careers/nrc-student-employment-program",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "http://aluperf.referrals.selectminds.com/?sso_oif=true": {
+      "company": "Nokia Canada",
+      "title": "Nokia Internal Employee access",
+      "url": "http://aluperf.referrals.selectminds.com/?sso_oif=true",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.pcl.com/Interns": {
+      "company": "PCL Construction",
+      "title": "Students",
+      "url": "https://www.pcl.com/Interns",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.roblox.com/jobs/6976304?gh_jid=6976304": {
+      "company": "Roblox Canada",
+      "title": "Executive Assistant, Marketing & International",
+      "url": "https://careers.roblox.com/jobs/6976304?gh_jid=6976304",
+      "location": "San Mateo, CA, United States",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.roblox.com/jobs/6580444?gh_jid=6580444": {
+      "company": "Roblox Canada",
+      "title": "[2025] Senior Machine Learning Engineer, Discovery - PhD New Grad",
+      "url": "https://careers.roblox.com/jobs/6580444?gh_jid=6580444",
+      "location": "San Mateo, CA, United States",
+      "source": "Greenhouse",
+      "tags": [
+        "Data-ml-ai"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers.roblox.com/jobs/7114765?gh_jid=7114765": {
+      "company": "Roblox Canada",
+      "title": "[Summer 2026] Software Engineer Intern",
+      "url": "https://careers.roblox.com/jobs/7114765?gh_jid=7114765",
+      "location": "San Mateo, CA, United States",
+      "source": "Greenhouse",
+      "tags": [
+        "Software"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stantec.jobs/campaigns/internship-co-op-student/jobs/": {
+      "company": "Stantec",
+      "title": "Internships and Co-ops",
+      "url": "https://stantec.jobs/campaigns/internship-co-op-student/jobs/",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stantec.jobs/#": {
+      "company": "Stantec",
+      "title": "students, graduates & veterans",
+      "url": "https://stantec.jobs/#",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html": {
+      "company": "Statistics Canada",
+      "title": "Federal Student Work Experience Program",
+      "url": "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stripe.com/jobs/search?gh_jid=6262030": {
+      "company": "Stripe Canada",
+      "title": "Internal Audit Technology Lead",
+      "url": "https://stripe.com/jobs/search?gh_jid=6262030",
+      "location": "Seattle",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stripe.com/jobs/search?gh_jid=7005405": {
+      "company": "Stripe Canada",
+      "title": "Internal Audit, Head of Professional Practices",
+      "url": "https://stripe.com/jobs/search?gh_jid=7005405",
+      "location": "NYC",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stripe.com/jobs/search?gh_jid=7051229": {
+      "company": "Stripe Canada",
+      "title": "Internal Editorial & Writing",
+      "url": "https://stripe.com/jobs/search?gh_jid=7051229",
+      "location": "London or Dublin",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stripe.com/jobs/search?gh_jid=6605467": {
+      "company": "Stripe Canada",
+      "title": "International HR Business Partner",
+      "url": "https://stripe.com/jobs/search?gh_jid=6605467",
+      "location": "Singapore",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://stripe.com/jobs/search?gh_jid=6956263": {
+      "company": "Stripe Canada",
+      "title": "Partner Development Manager - International Banking Partnerships",
+      "url": "https://stripe.com/jobs/search?gh_jid=6956263",
+      "location": "Singapore",
+      "source": "Greenhouse",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    },
+    "https://careers-uber.icims.com/jobs/search/us/es/careers/": {
+      "company": "Uber Canada",
+      "title": "Español (Internacional)",
+      "url": "https://careers-uber.icims.com/jobs/search/us/es/careers/",
+      "location": null,
+      "source": "Workday",
+      "tags": [
+        "General"
+      ],
+      "posted": null,
+      "deadline": null,
+      "notes": null,
+      "status": "Open",
+      "created_at": "2025-08-12 14:12 UTC",
+      "updated_at": "2025-08-12 14:12 UTC"
+    }
+  }
+}
