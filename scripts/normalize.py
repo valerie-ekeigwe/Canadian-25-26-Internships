@@ -72,13 +72,51 @@ COMPANY_HINTS = {
   "stellantis": ["mechanical","electrical","industrial"],
   "gm": ["mechanical","electrical","industrial"],
   "general motors": ["mechanical","electrical","industrial"],
+
+  # Power & Utilities (Electrical-heavy)
+  "hydro one": ["electrical"],
+  "ontario power generation": ["electrical","mechanical","chemical"],
+  "opg": ["electrical","mechanical","chemical"],
+  "bruce power": ["electrical","mechanical","chemical"],
+  "bc hydro": ["electrical"],
+  "hydro-qu\u00E9bec": ["electrical"],
+
+  # Energy / Pipelines / Oil & Gas (Chemical/Mechanical/Civil/Industrial)
+  "enbridge": ["chemical","mechanical","civil","industrial"],
+  "tc energy": ["civil","mechanical","industrial"],
+  "suncor": ["chemical","mechanical","industrial"],
+  "cenovus": ["chemical","mechanical","industrial"],
+  "imperial": ["chemical","mechanical","industrial"],
+  "pembina": ["chemical","mechanical","industrial"],
+  "transalta": ["electrical","mechanical","industrial"],
+
+  # Engineering consultancies (Civil/Mech/Chem/Electrical)
+  "wsp": ["civil","mechanical","electrical","chemical"],
+  "stantec": ["civil","mechanical","electrical","chemical"],
+  "hatch": ["civil","mechanical","electrical","chemical","mining"],
+  "snc": ["civil","mechanical","electrical","chemical"],
+  "snc-lavalin": ["civil","mechanical","electrical","chemical"],
+  "atkinsr\u00E9alis": ["civil","mechanical","electrical","chemical"],
+  "aecom": ["civil","mechanical","electrical","chemical"],
+  "aecon": ["civil","mechanical","electrical"],
+  "pcl": ["civil","mechanical","industrial"],
+  "ellisdon": ["civil","mechanical","industrial"],
+
+  # Space / Aero
+  "pratt & whitney": ["aerospace","mechanical"],
+  "mda": ["aerospace","mechanical","electrical"],
+
   # Law
   "blg": ["law"], "bennett jones": ["law"], "blake, cassels": ["law"], "cassels": ["law"],
   "stikeman": ["law"], "torys": ["law"], "goodmans": ["law"], "gowling": ["law"],
   "mccarthy": ["law"], "norton rose": ["law"], "supreme court of canada": ["law"],
-  # Consulting (if added later)
-  "deloitte": ["consulting"], "kpmg": ["consulting"], "pwc": ["consulting"], "ey": ["consulting"], "mckinsey": ["consulting"],
+
+  # Consulting / Business
+  "deloitte": ["consulting","business"], "kpmg": ["consulting","business"],
+  "pwc": ["consulting","business"], "ey": ["consulting","business"], "mckinsey": ["consulting"],
+  "bcg": ["consulting"], "bain": ["consulting"], "oliver wyman": ["consulting"],
 }
+
 
 def map_tags(company, role, incoming):
     out = set()
