@@ -7,11 +7,11 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -29,115 +29,11 @@ jobs:
       - name: Ensure data folder
         run: mkdir -p data
 
-      # Convert your current dict-with-items shape to a flat, filtered array
-      - name: Normalize postings.json (flatten, Canada-only, intern-only)
-        run: |
-          python - << 'PY'
-          import json, os, sys, re
-          from pathlib import Path
+      - name: Scrape postings
+        run: python scripts/scraper.py --filters filters.yaml --output data/postings.json
 
-          p = Path("data/postings.json")
-          if not p.exists():
-              sys.exit("data/postings.json is missing")
-
-          raw = json.loads(p.read_text())
-          # Accept either {"items": {...}} or already a list
-          if isinstance(raw, dict) and "items" in raw and isinstance(raw["items"], dict):
-              arr = list(raw["items"].values())
-          elif isinstance(raw, list):
-              arr = raw
-          else:
-              sys.exit("postings.json has unknown shape")
-
-          def looks_canadian(loc):
-              if not loc: return False
-              t = f" {loc.lower()} "
-              if " canada " in t: return True
-              H = [" toronto "," ontario "," on "," ottawa "," waterloo "," montreal "," québec "," quebec "," qc ",
-                   " vancouver "," british columbia "," bc "," calgary "," edmonton "," alberta "," ab ",
-                   " manitoba "," mb "," winnipeg "," saskatchewan "," sk "," regina "," saskatoon ",
-                   " nova scotia "," ns "," halifax "," new brunswick "," nb "," pei "," prince edward island ",
-                   " newfoundland "," nl "," st. john’s "," st johns "," yukon "," whitehorse "," nunavut "," nt "," nu "]
-              return any(h in t for h in H)
-
-          def is_internish(title):
-              t = (title or "").lower()
-              return any(k in t for k in ["intern","co-op","co op","coop","student","summer","placement"])
-
-          def norm_status(s):
-              if not s: return "Open"
-              s = s.strip().lower()
-              return "Closed" if s in {"closed","filled","no longer available","not accepting applications"} else "Open"
-
-          def infer_level(role, tags):
-              blob = f"{(role or '').lower()} {' '.join(tags or [])}"
-              if any(k in blob for k in ["eit","graduate","masters","master’s","phd","new grad program"]): return "Graduate"
-              if any(k in blob for k in ["intern","co-op","co op","coop","undergrad","bachelor","summer","student"]): return "Undergraduate"
-              return "Undergraduate"
-
-          # Tag buckets (mirrors your filters.yaml)
-          BUCKETS = {
-            "software": ["software","swe","developer","full stack","frontend","backend","mobile","android","ios","web"],
-            "mechatronics": ["mechatronics","robotics","autonomy","controls","automation"],
-            "electrical": ["electrical","electronics","power systems","pcb","circuit","firmware"],
-            "mechanical": ["mechanical","thermodynamics","hvac","cad","solidworks","catia","ansys","fea"],
-            "civil": ["civil","structural","municipal","transportation","geotech","construction"],
-            "chemical": ["chemical","process","petroleum","refining","materials"],
-            "industrial": ["industrial","manufacturing","lean","six sigma","operations","quality","supply chain"],
-            "aerospace": ["aerospace","avionics","space","propulsion","aerodynamics","satellite","uav"],
-            "mining": ["mining","metallurgy","mine","geology","geoscience"],
-            "data-ml-ai": ["data","ml","machine learning","ai","analytics","business intelligence","science"],
-            "hardware-embedded": ["embedded","fpga","asic","verilog","vhdl","rtl","hardware","micros","risc","arm"],
-            "law": ["legal","law","paralegal","policy","compliance","regulatory","litigation","clerk"],
-            "consulting": ["consultant","consulting","strategy","advisory","analytics","transformation","risk","deal","operations"],
-            "business": ["business","finance","marketing","accounting","economics","management","sales","hr","operations"],
-          }
-
-          def map_tags(role, incoming):
-              text = (role or "").lower()
-              out = set()
-              for b, kws in BUCKETS.items():
-                  if any(k in text for k in kws): out.add(b)
-              for t in incoming or []:
-                  tl = t.lower().replace(" ", "-")
-                  if tl in BUCKETS: out.add(tl)
-                  for b in BUCKETS:
-                      if tl == b or tl == b.replace("-", " "): out.add(b)
-              return sorted(out)
-
-          clean=[]
-          for r in arr:
-              role = r.get("role") or r.get("title") or ""
-              loc  = r.get("location")
-              if not is_internish(role): 
-                  continue
-              if not looks_canadian(loc):
-                  continue
-              tags = map_tags(role, r.get("tags"))
-              clean.append({
-                  "company": r.get("company") or "Unknown",
-                  "role": role,
-                  "location": loc,
-                  "country": "Canada",
-                  "deadline": r.get("deadline"),
-                  "status": norm_status(r.get("status")),
-                  "tags": tags,
-                  "url": r.get("url") or r.get("apply_url") or r.get("link"),
-                  "level": infer_level(role, tags),
-              })
-
-          # de-dupe
-          seen={}
-          for c in clean:
-              key=(c["company"].lower(), c["role"].lower(), (c["url"] or "").lower())
-              seen[key]=c
-          final=list(seen.values())
-
-          p.write_text(json.dumps(final, indent=2, ensure_ascii=False))
-          print("normalized rows:", len(final))
-          if not final:
-              sys.exit("No Canadian intern/co-op rows found after normalization.")
-          PY
+      - name: Normalize postings.json
+        run: python scripts/normalize.py
 
       - name: Render README
         run: python scripts/render_readme.py
