@@ -1,103 +1,44 @@
-# Canada Engineering Internships & Programs  
-[![Last Updated](https://img.shields.io/github/last-commit/valerie-ekeigwe/Canadian-25-26-Internships?label=Last%20Updated&style=flat-square)](https://github.com/valerie-ekeigwe/Canadian-25-26-Internships/commits/main)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/valerie-ekeigwe/Canadian-25-26-Internships/pulls)
-![Made in Canada](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%20in-Canada-red?style=flat-square)
+{# =========================
+  README (Canada-only Internships)
+  Structure: Category -> Discipline -> Level
+  Levels: Undergraduate, Graduate
+  Status badge: Open (green) / Closed (red)
+  ========================= #}
 
-_Last updated: **{{ generated_at }}**_  
+# Canadian Internships — {{ generated_at }}
 
-A Canada‑first, continuously updated list of **engineering internships**, **law & consulting roles**, and **student programs** for Canadian students — plus select **US roles that explicitly accept Canadian applicants**.  
-All links point to official company or program pages.
-
-> **Sorting:** By **Deadline** (ascending), then **Company**. If no date is listed on the official page, “Rolling/unspecified” is shown.  
-> **Status:** Automatically updated to Open or Closed based on the official source.
-
----
-
-## Software (SWE)
-{{ tables.software }}
+This list shows **Canada‑only** internships and co‑ops, split by **category, discipline, and level**.  
+If a row shows **Closed**, applications are no longer being accepted, but the listing remains for tracking recurring programs.
 
 ---
 
-## Mechanical
-{{ tables.mechanical }}
+{% for category_name, disciplines in groups.items() %}
+## {{ category_name }}
 
----
+{% for discipline_name, levels in disciplines.items() %}
+### {{ discipline_name }}
 
-## Mechatronics / Robotics / Embedded
-{{ tables.mechatronics }}
+{% for level_name, postings in levels.items() %}
+#### {{ level_name }} Internships (Canada)
 
----
-
-## Electrical / Computer / Hardware
-{{ tables.electrical_hw }}
-
----
-
-## Law & Consulting (Canada)
-{{ tables.law_consulting }}
-
----
-
-## Fellowships & Student Programs
-{% if opps and opps.programs %}
-| Name | Type | Region/City | Date(s)/Deadline | Notes | Official Link |
-|---|---|---|---|---|---|
-{% for p in opps.programs %}
-| {{ p.name }} | Program | {{ p.get('region','Canada') }} | {{ p.get('date','Rolling') }} | {{ ", ".join(p.tags) if p.get('tags') else '—' }} | [Learn more]({{ p.link }}) |
-{% endfor %}
+| Company | Role | Location | Deadline | Status | Tags | Link |
+|--------|------|----------|----------|--------|------|------|
+{% if postings|length == 0 %}
+| — | — | — | — | — | — | — |
 {% else %}
-| _No programs listed yet._ |
+{% for p in postings %}
+| {{ p.company }} | {{ p.role }} | {{ p.location or "Canada" }} | {{ p.deadline or "Rolling/unspecified" }} | {% if (p.status or "open")|lower == "open" %}<span style="color:green;font-weight:bold">Open</span>{% else %}<span style="color:red;font-weight:bold">Closed</span>{% endif %} | {{ (p.tags or [])|join(", ") }} | [Apply]({{ p.url }}) |
+{% endfor %}
 {% endif %}
 
----
-
-## Canadian Tech Events, Conferences & Hackathons
-{% if opps and (opps.hackathons or opps.conferences) %}
-| Name | Type | Region/City | Date(s) | Notes | Official Link |
-|---|---|---|---|---|---|
-{% for h in (opps.hackathons or []) %}
-| {{ h.name }} | Hackathon | {{ h.get('region','Canada') }} | {{ h.get('date','TBA') }} | {{ ", ".join(h.tags) if h.get('tags') else '—' }} | [Site]({{ h.link }}) |
 {% endfor %}
-{% for c in (opps.conferences or []) %}
-| {{ c.name }} | Conference | {{ c.get('region','Canada') }} | {{ c.get('date','TBA') }} | {{ ", ".join(c.tags) if c.get('tags') else '—' }} | [Site]({{ c.link }}) |
 {% endfor %}
-{% else %}
-| _No events listed yet._ |
-{% endif %}
 
 ---
+{% endfor %}
 
-## Contributing
+### Legend
+- **Level:** Undergraduate = co‑op, internship, bachelor’s student. Graduate = master’s, PhD, EIT, or designated grad internships.
+- **Status:** <span style="color:green;font-weight:bold">Open</span> means currently accepting applications; <span style="color:red;font-weight:bold">Closed</span> means not accepting now.
 
-Spotted a new posting or dead link? Open a PR:
-
-1. Keep the **table structure** and columns exactly as shown.  
-2. Link only to the **official** careers or program page.  
-3. Use **Rolling/unspecified** when a date isn’t listed.  
-4. Normalize location formatting (e.g., `Toronto, ON`).  
-5. The updater will handle sorting and status updates automatically.
-
----
-
-## Update Policy
-
-When the bot runs:
-
-- Re‑verify links and mark expired roles as Closed.  
-- Update dates from official pages.  
-- Add new roles open to Canadian students.  
-- Keep the table format stable for automation.
-
----
-
-## Changelog
-
-- **2025-08-12**: Added Law & Consulting section; wired template to updater; replaced hardcoded date with `generated_at`.  
-- **2025-08-09**: Expanded coverage; added Status column; added multiple new companies and programs.
-
----
-
-### Notes & Caveats
-
-- This list is curated for **Canadian students**.  
-- US roles are included **only** if the official posting explicitly states Canadians are eligible (global eligibility, remote from Canada, or explicit note).
+_Last updated: {{ generated_at }}_
