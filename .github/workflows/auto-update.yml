@@ -7,11 +7,11 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,7 +30,11 @@ jobs:
         run: mkdir -p data
 
       - name: Scrape postings
-        run: python scripts/scraper.py --filters filters.yaml --output data/postings.json
+        run: |
+          python scripts/scraper.py \
+            --filters filters.yaml \
+            --output data/postings.json \
+            --seed jobs.json
 
       - name: Render README
         run: python scripts/render_readme.py
