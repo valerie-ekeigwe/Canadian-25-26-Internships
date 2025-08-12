@@ -1,0 +1,63 @@
+# Canadian 25–26 Internships
+
+_Last updated: **{{ generated_at }}**_
+
+Canada‑first internships across **Software, Mechatronics/Robotics, Electrical, Mechanical, Civil, Chemical, Industrial/Manufacturing, Aerospace, Mining, Data/ML/AI, Hardware/Embedded, Law, Consulting**. Auto‑updated daily.
+
+## Fresh roles (new or updated in last 7 days)
+{% if fresh %}
+| Status | Company | Role | Location | Tags | Source | Link |
+|---|---|---|---|---|---|---|
+{% for r in fresh -%}
+| {% if r.status == 'Closed' %}<span style="color:#dc2626"><b>Closed</b></span>{% else %}Open{% endif %} | {{ r.company }} | {{ r.title }} | {{ r.location or '—' }} | {{ ", ".join(r.tags) }} | {{ r.source }} | [Apply]({{ r.url }}) |
+{% endfor -%}
+{% else %}
+No new or updated postings in the last week.
+{% endif %}
+
+## All tracked roles
+| Status | Company | Role | Location | Tags | Source | Link |
+|---|---|---|---|---|---|---|
+{% for r in all -%}
+| {% if r.status == 'Closed' %}<span style="color:#dc2626"><b>Closed</b></span>{% else %}Open{% endif %} | {{ r.company }} | {{ r.title }} | {{ r.location or '—' }} | {{ ", ".join(r.tags) }} | {{ r.source }} | [Apply]({{ r.url }}) |
+{% endfor -%}
+
+---
+
+## Opportunities for Canadians
+
+### Hackathons
+{% if opps.hackathons %}
+{% for h in opps.hackathons -%}
+- **{{ h.name }}** → {{ h.link }}  · _{{ ", ".join(h.tags) }}_
+{% endfor -%}
+{% else %}
+No hackathons listed yet.
+{% endif %}
+
+### Conferences
+{% if opps.conferences %}
+{% for c in opps.conferences -%}
+- **{{ c.name }}** → {{ c.link }}  · _{{ ", ".join(c.tags) }}_
+{% endfor -%}
+{% else %}
+No conferences listed yet.
+{% endif %}
+
+### Student Programs
+{% if opps.programs %}
+{% for p in opps.programs -%}
+- **{{ p.name }}** → {{ p.link }}  · _{{ ", ".join(p.tags) }}_
+{% endfor -%}
+{% else %}
+No programs listed yet.
+{% endif %}
+
+### Fellowships
+{% if opps.fellowships %}
+{% for f in opps.fellowships -%}
+- **{{ f.name }}** → {{ f.link }}  · _{{ ", ".join(f.tags) }}_
+{% endfor -%}
+{% else %}
+No fellowships listed yet.
+{% endif %}
