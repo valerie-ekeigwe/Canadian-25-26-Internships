@@ -1,53 +1,41 @@
-name: Auto Update
+name: Update internships README
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "17 7 * * *"  # daily at 07:17 UTC
-
-permissions:
-  contents: write  # required to push to the repo
-
-concurrency:
-  group: auto-update
-  cancel-in-progress: true
+    - cron: "15 13 * * *"   # 9:15 AM ET daily
+  workflow_dispatch:
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0    # needed for clean commits
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install deps
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run updater
+      # Replace this with your actual scraper command
+      - name: Scrape postings (temporary placeholder)
         run: |
-          python update.py
+          echo "[]" > data/postings.json
 
-      # ⬇️ Direct commit to main if README/jobs.json changed
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Render README
+        run: |
+          python scripts/render_readme.py
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
         with:
-          commit_message: "🔄 auto: update README and jobs registry"
-          branch: main
-          file_pattern: README.md jobs.json
+          commit-message: "chore: auto-update internships README"
+          title: "Automated update"
+          body: "This PR was created automatically by the daily updater."
+          branch: chore/auto-update
+          delete-branch: true
