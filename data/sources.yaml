@@ -149,25 +149,27 @@ taleo:
 
 # Law firms and special pages (manual HTML scanning)
 manual:
-  - { company: McCarthy Tétrault, title_hint: legal intern, url: https://www.mccarthy.ca/en/careers, location: Canada }
-  - { company: Osler, Hoskin & Harcourt, title_hint: legal intern, url: https://www.osler.com/en/careers, location: Canada }
-  - { company: Blake, Cassels & Graydon, title_hint: legal intern, url: https://www.blakes.com/careers, location: Canada }
-  - { company: Stikeman Elliott, title_hint: legal intern, url: https://www.stikeman.com/en-ca/careers, location: Canada }
-  - { company: Torys, title_hint: legal intern, url: https://www.torys.com/careers, location: Canada }
-  - { company: Bennett Jones, title_hint: legal intern, url: https://www.bennettjones.com/Careers, location: Canada }
-  - { company: Fasken, title_hint: legal intern, url: https://www.fasken.com/en/careers, location: Canada }
-  - { company: Norton Rose Fulbright Canada, title_hint: legal intern, url: https://www.nortonrosefulbright.com/en-ca/careers, location: Canada }
-  - { company: Gowling WLG, title_hint: legal intern, url: https://gowlingwlg.com/en/careers, location: Canada }
-  - { company: BLG, title_hint: legal intern, url: https://www.blg.com/en/careers, location: Canada }
-  - { company: Cassels Brock, title_hint: legal intern, url: https://cassels.com/careers, location: Canada }
-  - { company: Goodmans, title_hint: legal intern, url: https://goodmans.ca/careers, location: Canada }
-  - { company: Supreme Court of Canada, title_hint: law student, url: https://www.scc-csc.ca/jobs-emplois/index-eng.aspx, location: Ottawa, ON }
-  # Auto & Manufacturing (mechatronics/mechanical)
-  - { company: Toyota Motor Manufacturing Canada, title_hint: engineer intern, url: https://tmmc.ca/en/careers, location: Ontario }
-  - { company: Honda of Canada Mfg., title_hint: engineer intern, url: https://www.hondacanadamfg.ca/en/careers, location: Ontario }
-  - { company: Ford Canada, title_hint: engineer intern, url: https://corporate.ford.ca/careers.html, location: Ontario }
-  - { company: General Motors Canada, title_hint: engineer intern, url: https://careers.gm.com, location: Ontario }
-  - { company: Stellantis Canada, title_hint: engineer intern, url: https://careers.fcagroup.com, location: Ontario }
+  - { company: "McCarthy Tétrault", title_hint: "legal intern", url: "https://www.mccarthy.ca/en/careers", location: "Canada" }
+  - { company: "Osler, Hoskin & Harcourt", title_hint: "legal intern", url: "https://www.osler.com/en/careers", location: "Canada" }
+  - { company: "Blake, Cassels & Graydon", title_hint: "legal intern", url: "https://www.blakes.com/careers", location: "Canada" }
+  - { company: "Stikeman Elliott", title_hint: "legal intern", url: "https://www.stikeman.com/en-ca/careers", location: "Canada" }
+  - { company: "Torys", title_hint: "legal intern", url: "https://www.torys.com/careers", location: "Canada" }
+  - { company: "Bennett Jones", title_hint: "legal intern", url: "https://www.bennettjones.com/Careers", location: "Canada" }
+  - { company: "Fasken", title_hint: "legal intern", url: "https://www.fasken.com/en/careers", location: "Canada" }
+  - { company: "Norton Rose Fulbright Canada", title_hint: "legal intern", url: "https://www.nortonrosefulbright.com/en-ca/careers", location: "Canada" }
+  - { company: "Gowling WLG", title_hint: "legal intern", url: "https://gowlingwlg.com/en/careers", location: "Canada" }
+  - { company: "BLG", title_hint: "legal intern", url: "https://www.blg.com/en/careers", location: "Canada" }
+  - { company: "Cassels Brock", title_hint: "legal intern", url: "https://cassels.com/careers", location: "Canada" }
+  - { company: "Goodmans", title_hint: "legal intern", url: "https://goodmans.ca/careers", location: "Canada" }
+  - { company: "Supreme Court of Canada", title_hint: "law student", url: "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx", location: "Ottawa, ON" }
+
+  # Auto & Manufacturing
+  - { company: "Toyota Motor Manufacturing Canada", title_hint: "engineer intern", url: "https://tmmc.ca/en/careers", location: "Ontario" }
+  - { company: "Honda of Canada Mfg.", title_hint: "engineer intern", url: "https://www.hondacanadamfg.ca/en/careers", location: "Ontario" }
+  - { company: "Ford Canada", title_hint: "engineer intern", url: "https://corporate.ford.ca/careers.html", location: "Ontario" }
+  - { company: "General Motors Canada", title_hint: "engineer intern", url: "https://careers.gm.com", location: "Ontario" }
+  - { company: "Stellantis Canada", title_hint: "engineer intern", url: "https://careers.fcagroup.com", location: "Ontario" }
+
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Opportunities: hackathons, conferences, student programs, fellowships
