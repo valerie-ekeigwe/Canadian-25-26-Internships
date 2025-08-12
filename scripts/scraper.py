@@ -145,10 +145,11 @@ def main():
             continue
         time.sleep(0.3)
 
-    # Merge optional existing postings (e.g., your manual law/OEM entries)
-    if args.input:
-        pth = Path(args.input)
-        if pth.exists():
+    # Always try to merge existing postings from output path if present
+for merge_path in filter(None, [args.input, args.output]):
+    pth = Path(merge_path)
+    if pth.exists():
+        try:
             existing = json.loads(pth.read_text(encoding="utf-8"))
             if isinstance(existing, dict) and "items" in existing:
                 existing = list(existing["items"].values())
@@ -168,6 +169,8 @@ def main():
                             "url": r.get("url") or r.get("apply_url") or r.get("link"),
                             "level": r.get("level"),
                         })
+        except Exception:
+            pass
 
     # De-dupe by (company, role, url)
     dedup: Dict[tuple, Dict[str, Any]] = {}
