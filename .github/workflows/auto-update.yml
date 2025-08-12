@@ -2,8 +2,12 @@ name: Update internships README
 
 on:
   schedule:
-    - cron: "15 13 * * *"   # 9:15 AM ET daily
+    - cron: "15 13 * * *"   # 9:15 AM ET daily (13:15 UTC)
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
@@ -22,14 +26,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Replace this with your actual scraper command
+      - name: Create data folder
+        run: mkdir -p data
+
+      # TODO: replace this with your real scraper command that writes data/postings.json
       - name: Scrape postings (temporary placeholder)
-        run: |
-          echo "[]" > data/postings.json
+        run: echo "[]" > data/postings.json
 
       - name: Render README
-        run: |
-          python scripts/render_readme.py
+        run: python scripts/render_readme.py
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
