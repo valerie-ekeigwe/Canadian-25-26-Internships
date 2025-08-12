@@ -1,0 +1,83 @@
+filters:
+  countries: ["Canada"]
+
+  categories:
+    software: ["software","swe","developer","full stack","frontend","backend","mobile","android","ios","web"]
+    mechatronics: ["mechatronics","robotics","autonomy","controls","automation"]
+    electrical: ["electrical","electronics","power systems","pcb","circuit","firmware"]
+    mechanical: ["mechanical","thermodynamics","hvac","cad","solidworks","catia","ansys","fea"]
+    civil: ["civil","structural","municipal","transportation","geotech","construction"]
+    chemical: ["chemical","process","petroleum","refining","materials"]
+    industrial: ["industrial","manufacturing","lean","six sigma","operations","quality","supply chain"]
+    aerospace: ["aerospace","avionics","space","propulsion","aerodynamics","satellite","uav"]
+    mining: ["mining","metallurgy","mine","geology","geoscience"]
+    data-ml-ai: ["data","ml","machine learning","ai","analytics","business intelligence","science"]
+    hardware-embedded: ["embedded","fpga","asic","verilog","vhdl","rtl","hardware","micros","risc","arm"]
+    law: ["legal","law","paralegal","policy","compliance","regulatory","litigation","clerk"]
+    consulting: ["consultant","consulting","strategy","advisory","analytics","transformation","risk","deal","operations"]
+    business: ["business","finance","marketing","accounting","economics","management","sales","hr","operations"]
+
+  intern_markers: ["intern","co-op","co op","coop","student","summer","new grad","placement","industrial placement"]
+
+# Boards to scrape (ATS)
+boards:
+  lever:
+    - bell
+    - dapper-labs
+    - coursera
+    - apply.workable
+  greenhouse:
+    - shopify
+    - wealthsimple
+    - koho
+    - hatchways
+  ashby:
+    - geotab
+    - clearco
+    - ada
+  smartrecruiters:
+    - scotiabank
+    - bmo
+    - rbc
+    - cibc
+  workday:
+    - hydroone
+    - opg
+    - bchydro
+    - torontohydro
+    - manitobahydro
+    - saskpower
+    - alectra
+    - cenovus
+    - teck
+    - cameco
+    - cnl
+    - riotinto
+  taleo:
+    - aircanada
+    - bombardier
+
+# Manual sources (scraped separately)
+manual:
+  - company: Hydro Ottawa
+    url: https://hydroottawa.com/en/about-us/careers/student-opportunities
+  - company: Nova Scotia Power
+    url: https://www.nspower.ca/about-us/careers/co-op-and-internship-opportunities
+  - company: NB Power
+    url: https://www.nbpower.com/en/about-us/careers/student-employment
+  - company: FortisAlberta
+    url: https://www.fortalberta.com/about-us/careers
+  - company: FortisOntario
+    url: https://www.fortisontario.com/about/careers
+  - company: West Fraser
+    url: https://www.westfraser.com/careers/students-and-grads
+  - company: Canfor
+    url: https://www.canfor.com/careers
+  - company: Kruger
+    url: https://www.kruger.com/en/careers
+  - company: Department of Justice Canada
+    url: https://www.justice.gc.ca/eng/csj-sjc/prog/est-bae.html
+  - company: Accenture Canada
+    url: https://www.accenture.com/ca-en/careers
+  - company: KPMG Canada
+    url: https://home.kpmg/ca/en/home/careers.html
