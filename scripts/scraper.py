@@ -43,13 +43,13 @@ def gh_fetch(board: str) -> List[Dict[str, Any]]:
 
 def gh_to_posting(j: Dict[str, Any], company_label: str) -> Dict[str, Any]:
     title = j.get("title") or ""
-    # locations array or single
+    # location may be dict or list
     loc = None
     locs = j.get("location")
     if isinstance(locs, dict):
         loc = locs.get("name")
     elif isinstance(locs, list) and locs:
-        loc = locs[0].get("name")
+        loc = (locs[0] or {}).get("name")
     apply_url = j.get("absolute_url") or j.get("url") or j.get("internal_job_id")
     return {
         "company": company_label,
@@ -72,7 +72,6 @@ def lever_fetch(company_slug: str) -> List[Dict[str, Any]]:
 
 def lever_to_posting(j: Dict[str, Any], company_label: str) -> Dict[str, Any]:
     title = j.get("text") or j.get("title") or ""
-    # locations is list of dicts with 'name'
     loc = None
     if j.get("categories"):
         loc = j["categories"].get("location")
@@ -108,13 +107,12 @@ def main():
 
     postings: List[Dict[str, Any]] = []
 
-    # Pull from Greenhouse boards
+    # Greenhouse boards
     for ent in (cfg.get("greenhouse") or []):
         name = ent.get("name")
         board = ent.get("board")
         if not board or not name:
             continue
-        # Expect format: https://api.greenhouse.io/v1/boards/{board}
         board_slug = board.rstrip("/").split("/")[-1]
         try:
             jobs = gh_fetch(board_slug)
@@ -122,18 +120,16 @@ def main():
                 p = gh_to_posting(j, name)
                 if p["location"] and looks_canadian(p["location"]) and is_internish(p["role"]):
                     postings.append(p)
-        except Exception:
-            # Keep going even if a board fails
-            continue
-        time.sleep(0.3)
+        except Exception as e:
+            print(f"[warn] greenhouse fetch failed for {name}: {e}")
+        time.sleep(0.25)
 
-    # Pull from Lever boards
+    # Lever boards
     for ent in (cfg.get("lever") or []):
         name = ent.get("name")
         board = ent.get("board")
         if not board or not name:
             continue
-        # jobs.lever.co/{slug}
         slug = board.rstrip("/").split("/")[-1]
         try:
             jobs = lever_fetch(slug)
@@ -141,36 +137,36 @@ def main():
                 p = lever_to_posting(j, name)
                 if p["location"] and looks_canadian(p["location"]) and is_internish(p["role"]):
                     postings.append(p)
-        except Exception:
-            continue
-        time.sleep(0.3)
+        except Exception as e:
+            print(f"[warn] lever fetch failed for {name}: {e}")
+        time.sleep(0.25)
 
-    # Always try to merge existing postings from output path if present
-for merge_path in filter(None, [args.input, args.output]):
-    pth = Path(merge_path)
-    if pth.exists():
-        try:
-            existing = json.loads(pth.read_text(encoding="utf-8"))
-            if isinstance(existing, dict) and "items" in existing:
-                existing = list(existing["items"].values())
-            if isinstance(existing, list):
-                for r in existing:
-                    title = r.get("role") or r.get("title") or ""
-                    loc = r.get("location")
-                    if looks_canadian(loc) and is_internish(title):
-                        postings.append({
-                            "company": r.get("company") or "Unknown",
-                            "role": title,
-                            "location": loc,
-                            "country": "Canada",
-                            "deadline": r.get("deadline"),
-                            "status": r.get("status") or "Open",
-                            "tags": r.get("tags") or [],
-                            "url": r.get("url") or r.get("apply_url") or r.get("link"),
-                            "level": r.get("level"),
-                        })
-        except Exception:
-            pass
+    # Always try to merge existing postings (input and/or current output)
+    for merge_path in filter(None, [args.input, args.output]):
+        pth = Path(merge_path)
+        if pth.exists():
+            try:
+                existing = json.loads(pth.read_text(encoding="utf-8"))
+                if isinstance(existing, dict) and "items" in existing:
+                    existing = list(existing["items"].values())
+                if isinstance(existing, list):
+                    for r in existing:
+                        title = r.get("role") or r.get("title") or ""
+                        loc = r.get("location")
+                        if looks_canadian(loc) and is_internish(title):
+                            postings.append({
+                                "company": r.get("company") or "Unknown",
+                                "role": title,
+                                "location": loc,
+                                "country": "Canada",
+                                "deadline": r.get("deadline"),
+                                "status": r.get("status") or "Open",
+                                "tags": r.get("tags") or [],
+                                "url": r.get("url") or r.get("apply_url") or r.get("link"),
+                                "level": r.get("level"),
+                            })
+            except Exception as e:
+                print(f"[warn] merge read failed for {merge_path}: {e}")
 
     # De-dupe by (company, role, url)
     dedup: Dict[tuple, Dict[str, Any]] = {}
