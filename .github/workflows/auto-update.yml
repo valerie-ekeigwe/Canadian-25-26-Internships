@@ -30,7 +30,7 @@ jobs:
         run: mkdir -p data
 
       - name: Scrape postings
-        run: python scripts/scraper.py --filters filters.yaml --output data/postings.json
+        run: python scripts/scraper.py --filters filters.yaml --input data/postings.json --output data/postings.json
 
       - name: Normalize postings
         run: python scripts/normalize.py
