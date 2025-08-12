@@ -1,4 +1,2 @@
-requests
+Jinja2
 PyYAML
-jinja2
-beautifulsoup4
