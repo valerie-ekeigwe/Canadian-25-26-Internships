@@ -1,2 +1,6 @@
 Jinja2
 PyYAML
+requests
+beautifulsoup4
+lxml
+pandas
