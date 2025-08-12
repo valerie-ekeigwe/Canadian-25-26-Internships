@@ -22,154 +22,313 @@ filters:
 # ────────────────────────────────────────────────────────────────────────────────
 
 lever:
-  # Software, Data, Product, some Law/Policy at tech orgs
-  - { name: Shopify, board: https://jobs.lever.co/shopify }
-  - { name: Clio, board: https://jobs.lever.co/clio }
-  - { name: BenchSci, board: https://jobs.lever.co/benchsci }
-  - { name: Ada, board: https://jobs.lever.co/ada }
-  - { name: Clearco, board: https://jobs.lever.co/clearco }
-  - { name: Tulip Retail, board: https://jobs.lever.co/tulip }
-  - { name: Opencare, board: https://jobs.lever.co/opencare }
-  - { name: Borrowell, board: https://jobs.lever.co/borrowell }
-  - { name: HiMama, board: https://jobs.lever.co/himama }
-  - { name: Jobber, board: https://jobs.lever.co/getjobber }
-  - { name: League, board: https://jobs.lever.co/league }
-  - { name: Clutch, board: https://jobs.lever.co/clutch }
-  - { name: Top Hat, board: https://jobs.lever.co/tophat }
-  - { name: Dialogue, board: https://jobs.lever.co/dialogue }
-  - { name: Vena Solutions, board: https://jobs.lever.co/venasolutions }
-  - { name: ApplyBoard, board: https://jobs.lever.co/applyboard }
-  - { name: Wealthsimple (alt), board: https://jobs.lever.co/wealthsimple }
+  - name: "Shopify"
+    board: "https://jobs.lever.co/shopify"
+  - name: "Clio"
+    board: "https://jobs.lever.co/clio"
+  - name: "BenchSci"
+    board: "https://jobs.lever.co/benchsci"
+  - name: "Ada"
+    board: "https://jobs.lever.co/ada"
+  - name: "Clearco"
+    board: "https://jobs.lever.co/clearco"
+  - name: "Tulip Retail"
+    board: "https://jobs.lever.co/tulip"
+  - name: "Opencare"
+    board: "https://jobs.lever.co/opencare"
+  - name: "Borrowell"
+    board: "https://jobs.lever.co/borrowell"
+  - name: "HiMama"
+    board: "https://jobs.lever.co/himama"
+  - name: "Jobber"
+    board: "https://jobs.lever.co/getjobber"
+  - name: "League"
+    board: "https://jobs.lever.co/league"
+  - name: "Clutch"
+    board: "https://jobs.lever.co/clutch"
+  - name: "Top Hat"
+    board: "https://jobs.lever.co/tophat"
+  - name: "Dialogue"
+    board: "https://jobs.lever.co/dialogue"
+  - name: "Vena Solutions"
+    board: "https://jobs.lever.co/venasolutions"
+  - name: "ApplyBoard"
+    board: "https://jobs.lever.co/applyboard"
+  - name: "Wealthsimple (alt)"
+    board: "https://jobs.lever.co/wealthsimple"
 
 greenhouse:
-  # Tech, Consulting, some policy/legal internships
-  - { name: NVIDIA Canada, board: https://api.greenhouse.io/v1/boards/nvidia }
-  - { name: AMD Canada, board: https://api.greenhouse.io/v1/boards/amd }
-  - { name: Stripe Canada, board: https://api.greenhouse.io/v1/boards/stripe }
-  - { name: Square/Block Canada, board: https://api.greenhouse.io/v1/boards/squareup }
-  - { name: Unity Canada, board: https://api.greenhouse.io/v1/boards/unity }
-  - { name: Snowflake Canada, board: https://api.greenhouse.io/v1/boards/snowflake }
-  - { name: Atlassian Canada, board: https://api.greenhouse.io/v1/boards/atlassian }
-  - { name: DoorDash Canada, board: https://api.greenhouse.io/v1/boards/doordash }
-  - { name: Dropbox Canada, board: https://api.greenhouse.io/v1/boards/dropbox }
-  - { name: Datadog Canada, board: https://api.greenhouse.io/v1/boards/datadog }
-  - { name: Coinbase Canada, board: https://api.greenhouse.io/v1/boards/coinbase }
-  - { name: Roblox Canada, board: https://api.greenhouse.io/v1/boards/roblox }
-  - { name: Deloitte Canada, board: https://api.greenhouse.io/v1/boards/deloitte }     # consulting, legal/policy too
-  - { name: McKinsey Canada, board: https://api.greenhouse.io/v1/boards/mckinsey }     # consulting
-  - { name: BCG Canada, board: https://api.greenhouse.io/v1/boards/bcg }               # consulting
-  - { name: Bain Canada, board: https://api.greenhouse.io/v1/boards/bainandcompany }   # consulting
-  - { name: Oliver Wyman Canada, board: https://api.greenhouse.io/v1/boards/oliverwyman } # consulting
+  - name: "NVIDIA Canada"
+    board: "https://api.greenhouse.io/v1/boards/nvidia"
+  - name: "AMD Canada"
+    board: "https://api.greenhouse.io/v1/boards/amd"
+  - name: "Stripe Canada"
+    board: "https://api.greenhouse.io/v1/boards/stripe"
+  - name: "Square/Block Canada"
+    board: "https://api.greenhouse.io/v1/boards/squareup"
+  - name: "Unity Canada"
+    board: "https://api.greenhouse.io/v1/boards/unity"
+  - name: "Snowflake Canada"
+    board: "https://api.greenhouse.io/v1/boards/snowflake"
+  - name: "Atlassian Canada"
+    board: "https://api.greenhouse.io/v1/boards/atlassian"
+  - name: "DoorDash Canada"
+    board: "https://api.greenhouse.io/v1/boards/doordash"
+  - name: "Dropbox Canada"
+    board: "https://api.greenhouse.io/v1/boards/dropbox"
+  - name: "Datadog Canada"
+    board: "https://api.greenhouse.io/v1/boards/datadog"
+  - name: "Coinbase Canada"
+    board: "https://api.greenhouse.io/v1/boards/coinbase"
+  - name: "Roblox Canada"
+    board: "https://api.greenhouse.io/v1/boards/roblox"
+  - name: "Deloitte Canada"
+    board: "https://api.greenhouse.io/v1/boards/deloitte"
+  - name: "McKinsey Canada"
+    board: "https://api.greenhouse.io/v1/boards/mckinsey"
+  - name: "BCG Canada"
+    board: "https://api.greenhouse.io/v1/boards/bcg"
+  - name: "Bain Canada"
+    board: "https://api.greenhouse.io/v1/boards/bainandcompany"
+  - name: "Oliver Wyman Canada"
+    board: "https://api.greenhouse.io/v1/boards/oliverwyman"
 
 ashby:
-  - { name: Wealthsimple, board: https://jobs.ashbyhq.com/api/non-user-boards/wealthsimple }
-  - { name: Faire Toronto, board: https://jobs.ashbyhq.com/api/non-user-boards/faire }
-  - { name: Koho, board: https://jobs.ashbyhq.com/api/non-user-boards/koho }
-  - { name: Neo Financial, board: https://jobs.ashbyhq.com/api/non-user-boards/neofinancial }
-  - { name: Cohere, board: https://jobs.ashbyhq.com/api/non-user-boards/cohere }
-  - { name: OpenText, board: https://jobs.ashbyhq.com/api/non-user-boards/opentext }
-  - { name: CircleCI, board: https://jobs.ashbyhq.com/api/non-user-boards/circleci }
-  - { name: Canva (Toronto), board: https://jobs.ashbyhq.com/api/non-user-boards/canva }
+  - name: "Wealthsimple"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/wealthsimple"
+  - name: "Faire Toronto"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/faire"
+  - name: "Koho"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/koho"
+  - name: "Neo Financial"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/neofinancial"
+  - name: "Cohere"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/cohere"
+  - name: "OpenText"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/opentext"
+  - name: "CircleCI"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/circleci"
+  - name: "Canva (Toronto)"
+    board: "https://jobs.ashbyhq.com/api/non-user-boards/canva"
 
 smartrecruiters:
-  - { name: BMO, board: https://careers.smartrecruiters.com/BankOfMontreal }
-  - { name: Ubisoft Montreal, board: https://careers.smartrecruiters.com/Ubisoft }
-  - { name: Ubisoft Toronto, board: https://careers.smartrecruiters.com/UbisoftToronto }
-  - { name: GSoft, board: https://careers.smartrecruiters.com/GSoft }
-  - { name: Lightspeed, board: https://careers.smartrecruiters.com/LightspeedHQ }
-  - { name: Coveo, board: https://careers.smartrecruiters.com/Coveo }
-  - { name: CAE, board: https://careers.smartrecruiters.com/CAE }
-  - { name: GardaWorld, board: https://careers.smartrecruiters.com/GardaWorld }
-  - { name: Nuvei, board: https://careers.smartrecruiters.com/Nuvei }
+  - name: "BMO"
+    board: "https://careers.smartrecruiters.com/BankOfMontreal"
+  - name: "Ubisoft Montreal"
+    board: "https://careers.smartrecruiters.com/Ubisoft"
+  - name: "Ubisoft Toronto"
+    board: "https://careers.smartrecruiters.com/UbisoftToronto"
+  - name: "GSoft"
+    board: "https://careers.smartrecruiters.com/GSoft"
+  - name: "Lightspeed"
+    board: "https://careers.smartrecruiters.com/LightspeedHQ"
+  - name: "Coveo"
+    board: "https://careers.smartrecruiters.com/Coveo"
+  - name: "CAE"
+    board: "https://careers.smartrecruiters.com/CAE"
+  - name: "GardaWorld"
+    board: "https://careers.smartrecruiters.com/GardaWorld"
+  - name: "Nuvei"
+    board: "https://careers.smartrecruiters.com/Nuvei"
 
 workday:
-  # Banks, telecom, energy, gov, engineering firms
-  - { name: RBC, board: https://rbc.wd3.myworkdayjobs.com/en-US/RBC }
-  - { name: TD, board: https://td.wd3.myworkdayjobs.com/en-US/TDJobs }
-  - { name: Scotiabank, board: https://scotiabank.wd3.myworkdayjobs.com/en-US/ScotiabankJobs }
-  - { name: BMO, board: https://bmo.wd3.myworkdayjobs.com/en-US/External }
-  - { name: CIBC, board: https://cibc.wd3.myworkdayjobs.com/en_US/campus }
-  - { name: Ontario Power Generation, board: https://jobs.opg.com }
-  - { name: Hydro One, board: https://jobs.hydroone.com }
-  - { name: Bruce Power, board: https://brucepower.wd3.myworkdayjobs.com/en-US/BrucePower }
-  - { name: BC Hydro, board: https://app.bchydro.com/careers/current_opp.html }
-  - { name: Hydro-Québec, board: https://www.hydroquebec.com/emploi/ }
-  - { name: FortisBC, board: https://fortisbc.wd3.myworkdayjobs.com/en-US/FortisBCCareers }
-  - { name: Enbridge, board: https://careers.enbridge.com }
-  - { name: TC Energy, board: https://careers.tce.com }
-  - { name: Suncor, board: https://jobs.suncor.com }
-  - { name: Cenovus, board: https://jobs.cenovus.com }
-  - { name: Imperial Oil, board: https://jobs.exxonmobil.com/ImperialOil }
-  - { name: Pembina, board: https://pembina.wd3.myworkdayjobs.com/en-US/pembina }
-  - { name: TransAlta, board: https://transalta.wd3.myworkdayjobs.com/en-US/TransAlta }
-  - { name: Pratt & Whitney Canada, board: https://prattwhitney.wd5.myworkdayjobs.com/en-US/pwcareers }
-  - { name: Bombardier, board: https://bombardier.wd3.myworkdayjobs.com/en-US/bombardier }
-  - { name: MDA, board: https://mda.wd3.myworkdayjobs.com/en-US/Careers }
-  - { name: General Dynamics Mission Systems Canada, board: https://gdmissionsystems.wd5.myworkdayjobs.com/en-US/gdms }
-  - { name: Thales Canada, board: https://thales.wd3.myworkdayjobs.com/en-US/Careers }
-  - { name: SNC‑Lavalin / AtkinsRéalis, board: https://careers.atkinsrealis.com/en/jobs }
-  - { name: WSP Canada, board: https://wsp.wd3.myworkdayjobs.com/en-US/wsp-careers }
-  - { name: Stantec, board: https://stantec.jobs }
-  - { name: Hatch, board: https://jobs.hatch.com }
-  - { name: AECOM Canada, board: https://aecom.jobs }
-  - { name: Aecon, board: https://aecon.wd3.myworkdayjobs.com/en-US/aecon }
-  - { name: PCL Construction, board: https://careers.pcl.com }
-  - { name: EllisDon, board: https://ellisdon.wd3.myworkdayjobs.com/en-US/EllisDonCareers }
-  - { name: Kinaxis, board: https://kinaxis.wd3.myworkdayjobs.com/en-US/KinaxisCareers }
-  - { name: D2L, board: https://d2l.wd3.myworkdayjobs.com/en-US/D2L }
-  - { name: PointClickCare, board: https://pointclickcare.wd3.myworkdayjobs.com/en-US/PointClickCare }
-  - { name: OpenText (alt), board: https://opentext.wd3.myworkdayjobs.com/en-US/opentextcareers }
-  - { name: BlackBerry QNX, board: https://bb.wd3.myworkdayjobs.com/en-US/BlackBerry }
-  - { name: Ericsson Canada, board: https://ericsson.wd3.myworkdayjobs.com/en-US/ericssoncareers }
-  - { name: Nokia Canada, board: https://aluperf.referrals.selectminds.com/ }
-  - { name: Intel Canada, board: https://intel.wd1.myworkdayjobs.com/en-US/External }
-  - { name: Microsoft Canada, board: https://careers.microsoft.com/us/en/search-results?keywords=Canada }
-  - { name: Amazon Canada, board: https://www.amazon.jobs/en/teams/internships-for-students }
-  - { name: Meta Canada, board: https://www.metacareers.com/jobs }
-  - { name: Uber Canada, board: https://careers-uber.icims.com/jobs/search }
-  - { name: City of Toronto, board: https://jobs.toronto.ca/ }
-  - { name: City of Vancouver, board: https://jobs.vancouver.ca }
-  - { name: Government of Canada FSWEP, board: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html }
-  - { name: NRC (National Research Council), board: https://nrc.canada.ca/en/corporate/careers }
-  - { name: Canadian Space Agency, board: https://www.asc-csa.gc.ca/eng/careers/ }
-  - { name: Statistics Canada, board: https://www.statcan.gc.ca/en/employment }
-  - { name: Shared Services Canada, board: https://www.canada.ca/en/shared-services/corporate/careers.html }
-  - { name: Transport Canada, board: https://tc.canada.ca/en/corporate-services/jobs }
-  - { name: ECCC, board: https://www.canada.ca/en/environment-climate-change/corporate/transparency/careers.html }
+  - name: "RBC"
+    board: "https://rbc.wd3.myworkdayjobs.com/en-US/RBC"
+  - name: "TD"
+    board: "https://td.wd3.myworkdayjobs.com/en-US/TDJobs"
+  - name: "Scotiabank"
+    board: "https://scotiabank.wd3.myworkdayjobs.com/en-US/ScotiabankJobs"
+  - name: "BMO"
+    board: "https://bmo.wd3.myworkdayjobs.com/en-US/External"
+  - name: "CIBC"
+    board: "https://cibc.wd3.myworkdayjobs.com/en_US/campus"
+  - name: "Ontario Power Generation"
+    board: "https://jobs.opg.com"
+  - name: "Hydro One"
+    board: "https://jobs.hydroone.com"
+  - name: "Bruce Power"
+    board: "https://brucepower.wd3.myworkdayjobs.com/en-US/BrucePower"
+  - name: "BC Hydro"
+    board: "https://app.bchydro.com/careers/current_opp.html"
+  - name: "Hydro-Québec"
+    board: "https://www.hydroquebec.com/emploi/"
+  - name: "FortisBC"
+    board: "https://fortisbc.wd3.myworkdayjobs.com/en-US/FortisBCCareers"
+  - name: "Enbridge"
+    board: "https://careers.enbridge.com"
+  - name: "TC Energy"
+    board: "https://careers.tce.com"
+  - name: "Suncor"
+    board: "https://jobs.suncor.com"
+  - name: "Cenovus"
+    board: "https://jobs.cenovus.com"
+  - name: "Imperial Oil"
+    board: "https://jobs.exxonmobil.com/ImperialOil"
+  - name: "Pembina"
+    board: "https://pembina.wd3.myworkdayjobs.com/en-US/pembina"
+  - name: "TransAlta"
+    board: "https://transalta.wd3.myworkdayjobs.com/en-US/TransAlta"
+  - name: "Pratt & Whitney Canada"
+    board: "https://prattwhitney.wd5.myworkdayjobs.com/en-US/pwcareers"
+  - name: "Bombardier"
+    board: "https://bombardier.wd3.myworkdayjobs.com/en-US/bombardier"
+  - name: "MDA"
+    board: "https://mda.wd3.myworkdayjobs.com/en-US/Careers"
+  - name: "General Dynamics Mission Systems Canada"
+    board: "https://gdmissionsystems.wd5.myworkdayjobs.com/en-US/gdms"
+  - name: "Thales Canada"
+    board: "https://thales.wd3.myworkdayjobs.com/en-US/Careers"
+  - name: "SNC‑Lavalin / AtkinsRéalis"
+    board: "https://careers.atkinsrealis.com/en/jobs"
+  - name: "WSP Canada"
+    board: "https://wsp.wd3.myworkdayjobs.com/en-US/wsp-careers"
+  - name: "Stantec"
+    board: "https://stantec.jobs"
+  - name: "Hatch"
+    board: "https://jobs.hatch.com"
+  - name: "AECOM Canada"
+    board: "https://aecom.jobs"
+  - name: "Aecon"
+    board: "https://aecon.wd3.myworkdayjobs.com/en-US/aecon"
+  - name: "PCL Construction"
+    board: "https://careers.pcl.com"
+  - name: "EllisDon"
+    board: "https://ellisdon.wd3.myworkdayjobs.com/en-US/EllisDonCareers"
+  - name: "Kinaxis"
+    board: "https://kinaxis.wd3.myworkdayjobs.com/en-US/KinaxisCareers"
+  - name: "D2L"
+    board: "https://d2l.wd3.myworkdayjobs.com/en-US/D2L"
+  - name: "PointClickCare"
+    board: "https://pointclickcare.wd3.myworkdayjobs.com/en-US/PointClickCare"
+  - name: "OpenText (alt)"
+    board: "https://opentext.wd3.myworkdayjobs.com/en-US/opentextcareers"
+  - name: "BlackBerry QNX"
+    board: "https://bb.wd3.myworkdayjobs.com/en-US/BlackBerry"
+  - name: "Ericsson Canada"
+    board: "https://ericsson.wd3.myworkdayjobs.com/en-US/ericssoncareers"
+  - name: "Nokia Canada"
+    board: "https://aluperf.referrals.selectminds.com/"
+  - name: "Intel Canada"
+    board: "https://intel.wd1.myworkdayjobs.com/en-US/External"
+  - name: "Microsoft Canada"
+    board: "https://careers.microsoft.com/us/en/search-results?keywords=Canada"
+  - name: "Amazon Canada"
+    board: "https://www.amazon.jobs/en/teams/internships-for-students"
+  - name: "Meta Canada"
+    board: "https://www.metacareers.com/jobs"
+  - name: "Uber Canada"
+    board: "https://careers-uber.icims.com/jobs/search"
+  - name: "City of Toronto"
+    board: "https://jobs.toronto.ca/"
+  - name: "City of Vancouver"
+    board: "https://jobs.vancouver.ca"
+  - name: "Government of Canada FSWEP"
+    board: "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html"
+  - name: "NRC (National Research Council)"
+    board: "https://nrc.canada.ca/en/corporate/careers"
+  - name: "Canadian Space Agency"
+    board: "https://www.asc-csa.gc.ca/eng/careers/"
+  - name: "Statistics Canada"
+    board: "https://www.statcan.gc.ca/en/employment"
+  - name: "Shared Services Canada"
+    board: "https://www.canada.ca/en/shared-services/corporate/careers.html"
+  - name: "Transport Canada"
+    board: "https://tc.canada.ca/en/corporate-services/jobs"
+  - name: "ECCC"
+    board: "https://www.canada.ca/en/environment-climate-change/corporate/transparency/careers.html"
 
 taleo:
-  - { name: TELUS, board: https://telus.taleo.net/careersection/10120/jobsearch.ftl }
-  - { name: Canadian Tire, board: https://ctfs.taleo.net/careersection/2/jobsearch.ftl }
-  - { name: Loblaw, board: https://loblaw.taleo.net/careersection/2/jobsearch.ftl }
-  - { name: Sobeys, board: https://sobeys.taleo.net/careersection/2/jobsearch.ftl }
-  - { name: Magna, board: https://magna-international.taleo.net/careersection/magna_ge/jobsearch.ftl }
-  - { name: Linamar, board: https://linamar.taleo.net/careersection/2/jobsearch.ftl }
-  - { name: Ontario Teachers’ Pension Plan, board: https://otpp.taleo.net/careersection/2/jobsearch.ftl }
-  - { name: CBC/Radio‑Canada, board: https://cbc.taleo.net/careersection/2/jobsearch.ftl }
+  - name: "TELUS"
+    board: "https://telus.taleo.net/careersection/10120/jobsearch.ftl"
+  - name: "Canadian Tire"
+    board: "https://ctfs.taleo.net/careersection/2/jobsearch.ftl"
+  - name: "Loblaw"
+    board: "https://loblaw.taleo.net/careersection/2/jobsearch.ftl"
+  - name: "Sobeys"
+    board: "https://sobeys.taleo.net/careersection/2/jobsearch.ftl"
+  - name: "Magna"
+    board: "https://magna-international.taleo.net/careersection/magna_ge/jobsearch.ftl"
+  - name: "Linamar"
+    board: "https://linamar.taleo.net/careersection/2/jobsearch.ftl"
+  - name: "Ontario Teachers’ Pension Plan"
+    board: "https://otpp.taleo.net/careersection/2/jobsearch.ftl"
+  - name: "CBC/Radio‑Canada"
+    board: "https://cbc.taleo.net/careersection/2/jobsearch.ftl"
 
 # Law firms and special pages (manual HTML scanning)
 manual:
-  - { company: "McCarthy Tétrault", title_hint: "legal intern", url: "https://www.mccarthy.ca/en/careers", location: "Canada" }
-  - { company: "Osler, Hoskin & Harcourt", title_hint: "legal intern", url: "https://www.osler.com/en/careers", location: "Canada" }
-  - { company: "Blake, Cassels & Graydon", title_hint: "legal intern", url: "https://www.blakes.com/careers", location: "Canada" }
-  - { company: "Stikeman Elliott", title_hint: "legal intern", url: "https://www.stikeman.com/en-ca/careers", location: "Canada" }
-  - { company: "Torys", title_hint: "legal intern", url: "https://www.torys.com/careers", location: "Canada" }
-  - { company: "Bennett Jones", title_hint: "legal intern", url: "https://www.bennettjones.com/Careers", location: "Canada" }
-  - { company: "Fasken", title_hint: "legal intern", url: "https://www.fasken.com/en/careers", location: "Canada" }
-  - { company: "Norton Rose Fulbright Canada", title_hint: "legal intern", url: "https://www.nortonrosefulbright.com/en-ca/careers", location: "Canada" }
-  - { company: "Gowling WLG", title_hint: "legal intern", url: "https://gowlingwlg.com/en/careers", location: "Canada" }
-  - { company: "BLG", title_hint: "legal intern", url: "https://www.blg.com/en/careers", location: "Canada" }
-  - { company: "Cassels Brock", title_hint: "legal intern", url: "https://cassels.com/careers", location: "Canada" }
-  - { company: "Goodmans", title_hint: "legal intern", url: "https://goodmans.ca/careers", location: "Canada" }
-  - { company: "Supreme Court of Canada", title_hint: "law student", url: "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx", location: "Ottawa, ON" }
-
-  # Auto & Manufacturing
-  - { company: "Toyota Motor Manufacturing Canada", title_hint: "engineer intern", url: "https://tmmc.ca/en/careers", location: "Ontario" }
-  - { company: "Honda of Canada Mfg.", title_hint: "engineer intern", url: "https://www.hondacanadamfg.ca/en/careers", location: "Ontario" }
-  - { company: "Ford Canada", title_hint: "engineer intern", url: "https://corporate.ford.ca/careers.html", location: "Ontario" }
-  - { company: "General Motors Canada", title_hint: "engineer intern", url: "https://careers.gm.com", location: "Ontario" }
-  - { company: "Stellantis Canada", title_hint: "engineer intern", url: "https://careers.fcagroup.com", location: "Ontario" }
-
+  - company: "McCarthy Tétrault"
+    title_hint: "legal intern"
+    url: "https://www.mccarthy.ca/en/careers"
+    location: "Canada"
+  - company: "Osler, Hoskin & Harcourt"
+    title_hint: "legal intern"
+    url: "https://www.osler.com/en/careers"
+    location: "Canada"
+  - company: "Blake, Cassels & Graydon"
+    title_hint: "legal intern"
+    url: "https://www.blakes.com/careers"
+    location: "Canada"
+  - company: "Stikeman Elliott"
+    title_hint: "legal intern"
+    url: "https://www.stikeman.com/en-ca/careers"
+    location: "Canada"
+  - company: "Torys"
+    title_hint: "legal intern"
+    url: "https://www.torys.com/careers"
+    location: "Canada"
+  - company: "Bennett Jones"
+    title_hint: "legal intern"
+    url: "https://www.bennettjones.com/Careers"
+    location: "Canada"
+  - company: "Fasken"
+    title_hint: "legal intern"
+    url: "https://www.fasken.com/en/careers"
+    location: "Canada"
+  - company: "Norton Rose Fulbright Canada"
+    title_hint: "legal intern"
+    url: "https://www.nortonrosefulbright.com/en-ca/careers"
+    location: "Canada"
+  - company: "Gowling WLG"
+    title_hint: "legal intern"
+    url: "https://gowlingwlg.com/en/careers"
+    location: "Canada"
+  - company: "BLG"
+    title_hint: "legal intern"
+    url: "https://www.blg.com/en/careers"
+    location: "Canada"
+  - company: "Cassels Brock"
+    title_hint: "legal intern"
+    url: "https://cassels.com/careers"
+    location: "Canada"
+  - company: "Goodmans"
+    title_hint: "legal intern"
+    url: "https://goodmans.ca/careers"
+    location: "Canada"
+  - company: "Supreme Court of Canada"
+    title_hint: "law student"
+    url: "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx"
+    location: "Ottawa, ON"
+  - company: "Toyota Motor Manufacturing Canada"
+    title_hint: "engineer intern"
+    url: "https://tmmc.ca/en/careers"
+    location: "Ontario"
+  - company: "Honda of Canada Mfg."
+    title_hint: "engineer intern"
+    url: "https://www.hondacanadamfg.ca/en/careers"
+    location: "Ontario"
+  - company: "Ford Canada"
+    title_hint: "engineer intern"
+    url: "https://corporate.ford.ca/careers.html"
+    location: "Ontario"
+  - company: "General Motors Canada"
+    title_hint: "engineer intern"
+    url: "https://careers.gm.com"
+    location: "Ontario"
+  - company: "Stellantis Canada"
+    title_hint: "engineer intern"
+    url: "https://careers.fcagroup.com"
+    location: "Ontario"
 
 # ────────────────────────────────────────────────────────────────────────────────
 # Opportunities: hackathons, conferences, student programs, fellowships
@@ -177,35 +336,93 @@ manual:
 # ────────────────────────────────────────────────────────────────────────────────
 opportunities:
   hackathons:
-    - { name: Hack the North, link: https://hackthenorth.com, tags: ["software","data-ml-ai"] }
-    - { name: UofT Hacks, link: https://uofthacks.com, tags: ["software","data-ml-ai"] }
-    - { name: nwHacks, link: https://nwhacks.io, tags: ["software"] }
-    - { name: McHacks, link: https://mchacks.ca, tags: ["software"] }
-    - { name: QHacks, link: https://qhacks.io, tags: ["software","design"] }
-    - { name: Hack the Valley, link: https://hackthevalley.io, tags: ["software"] }
-    - { name: SheHack, link: https://www.shehacks.ca, tags: ["software","design"] }
-    - { name: MakeUofT, link: https://makeuoft.ca, tags: ["hardware-embedded","mechatronics"] }
-    - { name: UBC ThunderHacks, link: https://thunderhacks.ca, tags: ["software"] }
+    - name: "Hack the North"
+      link: "https://hackthenorth.com"
+      tags: ["software","data-ml-ai"]
+    - name: "UofT Hacks"
+      link: "https://uofthacks.com"
+      tags: ["software","data-ml-ai"]
+    - name: "nwHacks"
+      link: "https://nwhacks.io"
+      tags: ["software"]
+    - name: "McHacks"
+      link: "https://mchacks.ca"
+      tags: ["software"]
+    - name: "QHacks"
+      link: "https://qhacks.io"
+      tags: ["software","design"]
+    - name: "Hack the Valley"
+      link: "https://hackthevalley.io"
+      tags: ["software"]
+    - name: "SheHack"
+      link: "https://www.shehacks.ca"
+      tags: ["software","design"]
+    - name: "MakeUofT"
+      link: "https://makeuoft.ca"
+      tags: ["hardware-embedded","mechatronics"]
+    - name: "UBC ThunderHacks"
+      link: "https://thunderhacks.ca"
+      tags: ["software"]
   conferences:
-    - { name: Collision Conf (Toronto), link: https://collisionconf.com, tags: ["software","business","networking"] }
-    - { name: CEMF & IEEE Canada events, link: https://www.ieee.ca/en, tags: ["electrical","hardware-embedded"] }
-    - { name: OCE Discovery, link: https://www.oc-innovation.ca, tags: ["startup","business"] }
-    - { name: CAN-CWiC, link: https://cancwic.ca, tags: ["software","women-in-tech"] }
-    - { name: Canadian Science Policy Conference, link: https://sciencepolicy.ca, tags: ["policy","law"] }
-    - { name: PDAC Convention, link: https://www.pdac.ca/convention, tags: ["mining"] }
-    - { name: Big Data & AI Toronto, link: https://www.bigdata-toronto.com, tags: ["data-ml-ai"] }
-    - { name: Elevate Festival, link: https://elevate.ca, tags: ["software","business"] }
+    - name: "Collision Conf (Toronto)"
+      link: "https://collisionconf.com"
+      tags: ["software","business","networking"]
+    - name: "CEMF & IEEE Canada events"
+      link: "https://www.ieee.ca/en"
+      tags: ["electrical","hardware-embedded"]
+    - name: "OCE Discovery"
+      link: "https://www.oc-innovation.ca"
+      tags: ["startup","business"]
+    - name: "CAN-CWiC"
+      link: "https://cancwic.ca"
+      tags: ["software","women-in-tech"]
+    - name: "Canadian Science Policy Conference"
+      link: "https://sciencepolicy.ca"
+      tags: ["policy","law"]
+    - name: "PDAC Convention"
+      link: "https://www.pdac.ca/convention"
+      tags: ["mining"]
+    - name: "Big Data & AI Toronto"
+      link: "https://www.bigdata-toronto.com"
+      tags: ["data-ml-ai"]
+    - name: "Elevate Festival"
+      link: "https://elevate.ca"
+      tags: ["software","business"]
   programs:
-    - { name: FSWEP, link: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html, tags: ["software","civil","policy","law","consulting"] }
-    - { name: NSERC USRA, link: https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp, tags: ["research","data-ml-ai","aerospace","hardware-embedded"] }
-    - { name: Mitacs Accelerate, link: https://www.mitacs.ca, tags: ["research","industry"] }
-    - { name: Microsoft Student Ambassador, link: https://studentambassadors.microsoft.com, tags: ["software"] }
-    - { name: Google Developer Student Clubs, link: https://gdsc.community.dev, tags: ["software"] }
-    - { name: FIRST Robotics Mentoring, link: https://www.firstinspires.org/robotics/frc, tags: ["mechatronics","hardware-embedded"] }
-    - { name: AI4Good Lab (Canada), link: https://www.ai4goodlab.com, tags: ["data-ml-ai","policy"] }
-    - { name: McGill Model UN & Canadian MUN circuit, link: https://ssmu.ca/clubs/all-clubs/mun, tags: ["law","policy","consulting"] }
+    - name: "FSWEP"
+      link: "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html"
+      tags: ["software","civil","policy","law","consulting"]
+    - name: "NSERC USRA"
+      link: "https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp"
+      tags: ["research","data-ml-ai","aerospace","hardware-embedded"]
+    - name: "Mitacs Accelerate"
+      link: "https://www.mitacs.ca"
+      tags: ["research","industry"]
+    - name: "Microsoft Student Ambassador"
+      link: "https://studentambassadors.microsoft.com"
+      tags: ["software"]
+    - name: "Google Developer Student Clubs"
+      link: "https://gdsc.community.dev"
+      tags: ["software"]
+    - name: "FIRST Robotics Mentoring"
+      link: "https://www.firstinspires.org/robotics/frc"
+      tags: ["mechatronics","hardware-embedded"]
+    - name: "AI4Good Lab (Canada)"
+      link: "https://www.ai4goodlab.com"
+      tags: ["data-ml-ai","policy"]
+    - name: "McGill Model UN & Canadian MUN circuit"
+      link: "https://ssmu.ca/clubs/all-clubs/mun"
+      tags: ["law","policy","consulting"]
   fellowships:
-    - { name: Cansbridge Fellowship, link: https://www.cansbridgefellows.com, tags: ["business","consulting"] }
-    - { name: Venture for Canada Fellowship, link: https://ventureforcanada.ca, tags: ["business","startup"] }
-    - { name: CDL Apprentice/Tech, link: https://www.creativedestructionlab.com, tags: ["startup","software","business"] }
-    - { name: RBC Amplify, link: https://jobs.rbc.com/ca/en/amplify, tags: ["software","data-ml-ai","product"] }
+    - name: "Cansbridge Fellowship"
+      link: "https://www.cansbridgefellows.com"
+      tags: ["business","consulting"]
+    - name: "Venture for Canada Fellowship"
+      link: "https://ventureforcanada.ca"
+      tags: ["business","startup"]
+    - name: "CDL Apprentice/Tech"
+      link: "https://www.creativedestructionlab.com"
+      tags: ["startup","software","business"]
+    - name: "RBC Amplify"
+      link: "https://jobs.rbc.com/ca/en/amplify"
+      tags: ["software","data-ml-ai","product"]
