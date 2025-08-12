@@ -1,4 +1,0 @@
-requests
-PyYAML
-jinja2
-beautifulsoup4
