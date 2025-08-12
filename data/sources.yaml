@@ -1,3 +1,14 @@
+# ────────────────────────────────────────────────────────────────────────────────
+# Schema notes for your scraper (optional fields your pipeline can populate)
+# ────────────────────────────────────────────────────────────────────────────────
+# For each posting you emit, you can add:
+#   level: ["undergraduate"] | ["graduate"] | ["undergraduate","graduate"]
+#   status: "open" | "closed"
+# Auto inference ideas:
+#   - level: map ["co-op","co op","coop","intern","bachelor","undergrad"] → undergraduate
+#            ["masters","phd","graduate","EIT","new grad program"] → graduate
+#   - status: mark "closed" if page shows "no longer available", "position filled",
+#             or no current student listings.
 filters:
   countries: ["Canada"]
   # Tag buckets. Keep FLAT keys, because the code capitalizes each key as a tag.
@@ -199,7 +210,7 @@ workday:
   - name: "D2L"
     board: "https://d2l.wd3.myworkdayjobs.com/en-US/D2L"
   - name: "PointClickCare"
-    board: "https://pointclickcare.wd3.myworkdayjobs.com/en-US/PointClickCare"
+    board: "https://pointclickcare.wd3.myworkdayjobs.com/en-US/PointClickCareers"
   - name: "OpenText (alt)"
     board: "https://opentext.wd3.myworkdayjobs.com/en-US/opentextcareers"
   - name: "BlackBerry QNX"
@@ -236,6 +247,9 @@ workday:
     board: "https://tc.canada.ca/en/corporate-services/jobs"
   - name: "ECCC"
     board: "https://www.canada.ca/en/environment-climate-change/corporate/transparency/careers.html"
+  # NEW – chemical/process focus
+  - name: "Dow Canada"
+    board: "https://dow.wd1.myworkdayjobs.com/ExternalCareers"
 
 taleo:
   - name: "TELUS"
@@ -255,174 +269,187 @@ taleo:
   - name: "CBC/Radio‑Canada"
     board: "https://cbc.taleo.net/careersection/2/jobsearch.ftl"
 
+# ────────────────────────────────────────────────────────────────────────────────
 # Law firms and special pages (manual HTML scanning)
+# ────────────────────────────────────────────────────────────────────────────────
 manual:
+  # Law (Canada, internship/ student/ articling portals)
   - company: "McCarthy Tétrault"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.mccarthy.ca/en/careers"
     location: "Canada"
   - company: "Osler, Hoskin & Harcourt"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.osler.com/en/careers"
     location: "Canada"
   - company: "Blake, Cassels & Graydon"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.blakes.com/careers"
     location: "Canada"
   - company: "Stikeman Elliott"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.stikeman.com/en-ca/careers"
     location: "Canada"
   - company: "Torys"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.torys.com/careers"
     location: "Canada"
   - company: "Bennett Jones"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.bennettjones.com/Careers"
     location: "Canada"
   - company: "Fasken"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.fasken.com/en/careers"
     location: "Canada"
   - company: "Norton Rose Fulbright Canada"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.nortonrosefulbright.com/en-ca/careers"
     location: "Canada"
   - company: "Gowling WLG"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://gowlingwlg.com/en/careers"
     location: "Canada"
   - company: "BLG"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://www.blg.com/en/careers"
     location: "Canada"
   - company: "Cassels Brock"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://cassels.com/careers"
     location: "Canada"
   - company: "Goodmans"
-    title_hint: "legal intern"
+    title_hint: "legal intern|summer student|articling"
     url: "https://goodmans.ca/careers"
     location: "Canada"
   - company: "Supreme Court of Canada"
-    title_hint: "law student"
+    title_hint: "law student|intern|clerk"
     url: "https://www.scc-csc.ca/jobs-emplois/index-eng.aspx"
     location: "Ottawa, ON"
+
+  # Automotive OEMs (Canada student engineering portals)
   - company: "Toyota Motor Manufacturing Canada"
-    title_hint: "engineer intern"
+    title_hint: "engineer intern|co-op|student"
     url: "https://tmmc.ca/en/careers"
     location: "Ontario"
   - company: "Honda of Canada Mfg."
-    title_hint: "engineer intern"
+    title_hint: "engineer intern|co-op|student"
     url: "https://www.hondacanadamfg.ca/en/careers"
     location: "Ontario"
   - company: "Ford Canada"
-    title_hint: "engineer intern"
+    title_hint: "engineer intern|co-op|student"
     url: "https://corporate.ford.ca/careers.html"
     location: "Ontario"
   - company: "General Motors Canada"
-    title_hint: "engineer intern"
+    title_hint: "engineer intern|co-op|student"
     url: "https://careers.gm.com"
     location: "Ontario"
   - company: "Stellantis Canada"
-    title_hint: "engineer intern"
+    title_hint: "engineer intern|co-op|student"
     url: "https://careers.fcagroup.com"
     location: "Ontario"
 
-# ────────────────────────────────────────────────────────────────────────────────
-# Opportunities: hackathons, conferences, student programs, fellowships
-# Rendered in a separate section of README.
-# ────────────────────────────────────────────────────────────────────────────────
-opportunities:
-  hackathons:
-    - name: "Hack the North"
-      link: "https://hackthenorth.com"
-      tags: ["software","data-ml-ai"]
-    - name: "UofT Hacks"
-      link: "https://uofthacks.com"
-      tags: ["software","data-ml-ai"]
-    - name: "nwHacks"
-      link: "https://nwhacks.io"
-      tags: ["software"]
-    - name: "McHacks"
-      link: "https://mchacks.ca"
-      tags: ["software"]
-    - name: "QHacks"
-      link: "https://qhacks.io"
-      tags: ["software","design"]
-    - name: "Hack the Valley"
-      link: "https://hackthevalley.io"
-      tags: ["software"]
-    - name: "SheHack"
-      link: "https://www.shehacks.ca"
-      tags: ["software","design"]
-    - name: "MakeUofT"
-      link: "https://makeuoft.ca"
-      tags: ["hardware-embedded","mechatronics"]
-    - name: "UBC ThunderHacks"
-      link: "https://thunderhacks.ca"
-      tags: ["software"]
-  conferences:
-    - name: "Collision Conf (Toronto)"
-      link: "https://collisionconf.com"
-      tags: ["software","business","networking"]
-    - name: "CEMF & IEEE Canada events"
-      link: "https://www.ieee.ca/en"
-      tags: ["electrical","hardware-embedded"]
-    - name: "OCE Discovery"
-      link: "https://www.oc-innovation.ca"
-      tags: ["startup","business"]
-    - name: "CAN-CWiC"
-      link: "https://cancwic.ca"
-      tags: ["software","women-in-tech"]
-    - name: "Canadian Science Policy Conference"
-      link: "https://sciencepolicy.ca"
-      tags: ["policy","law"]
-    - name: "PDAC Convention"
-      link: "https://www.pdac.ca/convention"
-      tags: ["mining"]
-    - name: "Big Data & AI Toronto"
-      link: "https://www.bigdata-toronto.com"
-      tags: ["data-ml-ai"]
-    - name: "Elevate Festival"
-      link: "https://elevate.ca"
-      tags: ["software","business"]
-  programs:
-    - name: "FSWEP"
-      link: "https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html"
-      tags: ["software","civil","policy","law","consulting"]
-    - name: "NSERC USRA"
-      link: "https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp"
-      tags: ["research","data-ml-ai","aerospace","hardware-embedded"]
-    - name: "Mitacs Accelerate"
-      link: "https://www.mitacs.ca"
-      tags: ["research","industry"]
-    - name: "Microsoft Student Ambassador"
-      link: "https://studentambassadors.microsoft.com"
-      tags: ["software"]
-    - name: "Google Developer Student Clubs"
-      link: "https://gdsc.community.dev"
-      tags: ["software"]
-    - name: "FIRST Robotics Mentoring"
-      link: "https://www.firstinspires.org/robotics/frc"
-      tags: ["mechatronics","hardware-embedded"]
-    - name: "AI4Good Lab (Canada)"
-      link: "https://www.ai4goodlab.com"
-      tags: ["data-ml-ai","policy"]
-    - name: "McGill Model UN & Canadian MUN circuit"
-      link: "https://ssmu.ca/clubs/all-clubs/mun"
-      tags: ["law","policy","consulting"]
-  fellowships:
-    - name: "Cansbridge Fellowship"
-      link: "https://www.cansbridgefellows.com"
-      tags: ["business","consulting"]
-    - name: "Venture for Canada Fellowship"
-      link: "https://ventureforcanada.ca"
-      tags: ["business","startup"]
-    - name: "CDL Apprentice/Tech"
-      link: "https://www.creativedestructionlab.com"
-      tags: ["startup","software","business"]
-    - name: "RBC Amplify"
-      link: "https://jobs.rbc.com/ca/en/amplify"
-      tags: ["software","data-ml-ai","product"]
+  # Chemical Engineering (Undergrad + Grad/EIT)
+  - company: "Nutrien"
+    title_hint: "chemical|process intern|co-op|student"
+    url: "https://www.nutrien.com/careers"
+    location: "Canada"
+  - company: "NOVA Chemicals"
+    title_hint: "chemical|process|manufacturing intern|co-op|student"
+    url: "https://jobs.novachem.com/"
+    location: "Canada"
+  - company: "BASF Canada"
+    title_hint: "intern|co-op|student (Canada)"
+    url: "https://www.basf.com/ca/en/careers.html"
+    location: "Canada"
+  - company: "Methanex"
+    title_hint: "chemical|process intern|co-op|student"
+    url: "https://www.methanex.com/careers/"
+    location: "Canada"
+  - company: "Irving Oil"
+    title_hint: "process|refinery intern|co-op|student"
+    url: "https://www.irvingoil.com/en-CA/careers"
+    location: "Saint John, NB"
+    tags: ["closed"]  # flip on when no current student listings
+  - company: "Teck Resources"
+    title_hint: "process|metallurgical|chemical co-op|EIT|new grad"
+    url: "https://www.teck.com/careers/students/"
+    location: "Canada"
+  - company: "Cameco"
+    title_hint: "process|chemical intern|co-op|new grad"
+    url: "https://www.cameco.com/careers/students"
+    location: "Saskatchewan & Ontario"
+  - company: "Canadian Nuclear Laboratories (CNL)"
+    title_hint: "chemical|materials|nuclear intern|co-op|graduate"
+    url: "https://www.cnl.ca/about-cnl/student-careers/"
+    location: "Ontario & Manitoba"
+  - company: "Rio Tinto Canada"
+    title_hint: "process|smelting|metallurgy intern|co-op|graduate"
+    url: "https://www.riotinto.com/en/can/careers/graduates-interns"
+    location: "QC, BC, NL"
+
+  # Electrical / ECE (Undergrad + Grad/EIT)
+  - company: "Hydro One"
+    title_hint: "electrical|power systems intern|co-op|student"
+    url: "https://jobs.hydroone.com/go/Student-Jobs/826900/"
+    location: "Ontario"
+  - company: "Ontario Power Generation (OPG)"
+    title_hint: "electrical|power|I&C intern|co-op|PEY"
+    url: "https://jobs.opg.com/go/Our-Students-%26-New-Grads/2626017/"
+    location: "Ontario"
+  - company: "BC Hydro"
+    title_hint: "electrical|power|substation intern|co-op|EIT"
+    url: "https://www.bchydro.com/toolbar/careers/apprenticeships-training/cooperative.html"
+    location: "British Columbia"
+  - company: "Hydro-Québec"
+    title_hint: "électrique|énergie stage|stagiaire|étudiant"
+    url: "https://emploi.hydroquebec.com/content/Stages-et-emplois-etudiants/"
+    location: "Québec"
+  - company: "Toronto Hydro"
+    title_hint: "electrical|distribution intern|co-op|student"
+    url: "https://jobs.torontohydro.com/go/Students/2370417/"
+    location: "Toronto, ON"
+  - company: "Manitoba Hydro"
+    title_hint: "electrical|power intern|co-op|student"
+    url: "https://www.hydro.mb.ca/careers/students/"
+    location: "Manitoba"
+  - company: "SaskPower"
+    title_hint: "electrical|power intern|co-op|student"
+    url: "https://jobs.saskpower.com/go/Student-Opportunities/2564000/"
+    location: "Saskatchewan"
+  - company: "Alectra Utilities"
+    title_hint: "electrical|distribution intern|co-op|student"
+    url: "https://www.alectra.com/careers"
+    location: "Ontario (GTA)"
+  - company: "Bell Canada"
+    title_hint: "network|RF|5G intern|co-op|student (Canada)"
+    url: "https://jobs.bell.ca/ca/en/internships"
+    location: "Canada"
+  - company: "Rogers"
+    title_hint: "network|RF|5G intern|co-op|student (Canada)"
+    url: "https://jobs.rogers.com/"
+    location: "Canada"
+  - company: "BC Hydro — EIT"
+    title_hint: "Engineer-in-Training electrical"
+    url: "https://www.bchydro.com/toolbar/careers/apprenticeships-training/engineers.html"
+    location: "British Columbia"
+  - company: "Manitoba Hydro — New Grads"
+    title_hint: "EIT electrical|new grad"
+    url: "https://www.hydro.mb.ca/careers/new-grads/"
+    location: "Manitoba"
+  - company: "Siemens Canada"
+    title_hint: "co-op|intern|new grad (Canada)"
+    url: "https://www.siemens.com/ca/en/company/jobs/early-careers.html"
+    location: "Canada"
+  - company: "Schneider Electric Canada"
+    title_hint: "intern|co-op|graduate (Canada)"
+    url: "https://www.se.com/ca/en/about-us/careers/students-young-professionals.jsp"
+    location: "Canada"
+  - company: "ABB (Canada)"
+    title_hint: "intern|co-op|student (Canada)"
+    url: "https://careers.abb/global/en/students"
+    location: "Canada"
+  - company: "Eaton Canada"
+    title_hint: "intern|co-op|student (Canada)"
+    url: "https://www.eaton.com/ca/en-gb/company/careers/university-students.html"
+    location: "Canada"
